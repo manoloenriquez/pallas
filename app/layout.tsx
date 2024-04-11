@@ -3,8 +3,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import localFont from "next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
+const galvji = localFont({ src: "../assets/galvji.ttf" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col">
+      <body className={`min-h-screen flex flex-col ${galvji.className}`}>
         <Navbar />
         <section className="flex-1 flex">{children}</section>
         {/* <Footer /> */}
