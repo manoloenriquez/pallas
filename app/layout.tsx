@@ -28,10 +28,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`min-h-screen flex flex-col ${galvji.className}`}>
+    <html lang="en" className="h-screen overflow-hidden">
+      <body
+        className={`h-screen snap-y snap-mandatory overflow-y-scroll ${galvji.className}`}
+      >
         <Navbar />
-        <section className="flex-1 flex">{children}</section>
+        {children}
         {/* <Footer /> */}
       </body>
     </html>

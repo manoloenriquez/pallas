@@ -9,12 +9,10 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 
-const RED = "#980000";
-
 export default function Home() {
   return (
-    <main className="w-full">
-      <section className="md:min-h-screen flex flex-col-reverse md:flex-row md:justify-between md:items-center">
+    <>
+      <section className="h-screen snap-center flex flex-col-reverse md:flex-row md:justify-between md:items-center">
         {/* Text */}
         <div className="p-4 lg:p-24">
           <h1 className="text-4xl sm:text-5xl md:text-6xl mb-4">
@@ -33,14 +31,16 @@ export default function Home() {
           </Button>
         </div>
         {/* Image slideshow */}
-        <Carousel className="h-96 md:h-screen w-full md:w-4/12">
+        <Carousel className="h-96 md:h-screen w-full md:w-5/12">
           <CarouselContent className="h-96 md:h-screen">
             <CarouselItem className="h-full relative">
               <Image
                 src="/mohammad-mardani-U6x3xkzeFIE-unsplash.jpg"
                 alt=""
                 fill={true}
-                objectFit="cover"
+                style={{
+                  objectFit: "cover",
+                }}
               />
             </CarouselItem>
             <CarouselItem className="h-full relative">
@@ -48,7 +48,9 @@ export default function Home() {
                 src="/mohammad-mardani-U6x3xkzeFIE-unsplash.jpg"
                 alt=""
                 fill={true}
-                objectFit="cover"
+                style={{
+                  objectFit: "cover",
+                }}
               />
             </CarouselItem>
             <CarouselItem className="h-full relative">
@@ -56,7 +58,9 @@ export default function Home() {
                 src="/mohammad-mardani-U6x3xkzeFIE-unsplash.jpg"
                 alt=""
                 fill={true}
-                objectFit="cover"
+                style={{
+                  objectFit: "cover",
+                }}
               />
             </CarouselItem>
           </CarouselContent>
@@ -65,7 +69,7 @@ export default function Home() {
         </Carousel>
       </section>
 
-      <section className="bg-[#e7e7e7] px-4">
+      <section className="h-screen snap-center bg-[#e7e7e7] px-4 pt-24">
         <div className="flex flex-col md:flex-row max-w-screen-2xl mx-auto">
           <div className="p-4 lg:p-24 md:w-5/12">
             <h2 className="text-2xl">WHO WE ARE</h2>
@@ -120,7 +124,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pb-24">
+      <section className="h-screen snap-center pt-24 pb-24">
         <div className="flex flex-col items-center max-w-screen-2xl mx-auto">
           <h2 className="font-bold text-2xl mt-10 mb-8">WHAT WE PROVIDE</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
@@ -195,6 +199,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }

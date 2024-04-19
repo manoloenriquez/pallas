@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 type LinkType = {
   label: string;
@@ -28,8 +29,36 @@ const links: LinkType[] = [
 ];
 
 export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled =
+        window.scrollY > 50 || window.document.body.scrollTop > 50;
+      // if (isScrolled !== scrolled) {
+      //   setScrolled(isScrolled);
+      // }
+
+      setScrolled(isScrolled);
+    };
+
+    // Adding the event listener when component mounts
+    window.addEventListener("scroll", handleScroll);
+    document.body.addEventListener("scroll", handleScroll);
+
+    // Clean up to remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.document.body.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="p-4 text-lg md:absolute">
+    <nav
+      className={`p-4 text-lg fixed w-full transition-colors z-10 ${
+        scrolled ? "bg-white" : ""
+      }`}
+    >
       <div className="flex items-center gap-6">
         <Link href="/" className="hover:opacity-70 transition-opacity">
           <Image
