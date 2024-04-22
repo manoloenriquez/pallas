@@ -132,7 +132,7 @@ export default function Home() {
               <Image
                 src="/outlet.png"
                 alt=""
-                width={300}
+                width={200}
                 height={0}
                 style={{
                   height: "auto",
@@ -155,7 +155,7 @@ export default function Home() {
               <Image
                 src="/electric-pole.png"
                 alt=""
-                width={300}
+                width={200}
                 height={0}
                 style={{
                   height: "auto",
@@ -178,7 +178,7 @@ export default function Home() {
               <Image
                 src="/power-button.png"
                 alt=""
-                width={300}
+                width={200}
                 height={0}
                 style={{
                   height: "auto",
