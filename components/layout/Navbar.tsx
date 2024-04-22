@@ -12,6 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { usePathname } from "next/navigation";
 
 type LinkType = {
   label: string;
@@ -39,6 +40,7 @@ const links: LinkType[] = [
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const path = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,7 +68,7 @@ export default function Navbar() {
     <>
       <nav
         className={`hidden md:block p-4 text-lg fixed w-full transition-colors z-10 ${
-          scrolled ? "bg-white shadow" : ""
+          scrolled || path !== "/" ? "bg-white shadow" : ""
         }`}
       >
         <div className="flex items-center gap-6">
