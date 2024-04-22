@@ -12,14 +12,14 @@ import { PropsWithChildren } from "react";
 
 const Heading = ({ children }: PropsWithChildren) => (
   <div>
-    <h2 className="text-4xl mb-2">{children}</h2>
+    <h2 className="text-5xl mb-2">{children}</h2>
     <div className="bg-pallaslightred w-2/12 h-[4px] mb-4"></div>
   </div>
 );
 
 const Subheading = ({ children }: PropsWithChildren) => (
   <div>
-    <h1 className="text-4xl mb-2">{children}</h1>
+    <h1 className="text-5xl mb-2">{children}</h1>
     <div className="bg-pallaslightred w-4/12 h-[4px] mb-4"></div>
   </div>
 );
@@ -40,10 +40,10 @@ const AboutContent = ({
 export default function About() {
   return (
     <>
-      <section className="hidden md:block text-pallaslightred text-justify p-8 h-screen snap-center max-w-screen-2xl mx-auto pt-24">
+      <section className="hidden md:block text-pallaslightred text-justify p-24 h-screen snap-center max-w-screen-2xl mx-auto pt-32">
         <Heading>About Us</Heading>
 
-        <div className="flex flex-col md:grid grid-cols-2 gap-4">
+        <div className="flex flex-col md:grid grid-cols-2 gap-12">
           <div>
             <p>
               <strong>Pallas Electrical</strong> is a designer and supplier of
@@ -53,18 +53,15 @@ export default function About() {
             </p>
             <br />
             <p>
-              <strong>
-                Knowing that our product line-up is an indispensible component
-                of electrical grid
-              </strong>
-              , we make sure that it is backed by our confidence in the strength
-              of our expertise and outstanding customer support.{" "}
-              <strong>Pallas Electrical</strong> guarantees exceptional products
-              that power homes and business
+              Knowing that our product line-up is an indispensible component of
+              electrical grid , we make sure that it is backed by our confidence
+              in the strength of our expertise and outstanding customer support.{" "}
+              Pallas Electrical guarantees exceptional products that power homes
+              and business
             </p>
           </div>
 
-          <div className="relative min-h-96">
+          <div className="relative min-h-[40rem]">
             <Image
               src="/about/pexels-pixabay-159279.jpg"
               alt=""

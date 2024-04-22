@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-screen overflow-hidden">
       <body
-        className={`h-screen snap-y snap-mandatory overflow-y-scroll ${galvji.className}`}
+        className={`h-screen snap-y snap-mandatory overflow-y-scroll text-lg md:text-3xl ${galvji.className}`}
       >
         <Navbar />
         {children}
