@@ -3,6 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Button } from "../ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 type LinkType = {
   label: string;
@@ -54,33 +63,71 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav
-      className={`p-4 text-lg fixed w-full transition-colors z-10 ${
-        scrolled ? "bg-white" : ""
-      }`}
-    >
-      <div className="flex items-center gap-6">
-        <Link href="/" className="hover:opacity-70 transition-opacity">
-          <Image
-            src="/Pallas-Logo_Logo With Name.png"
-            alt=""
-            width={140}
-            height={0}
-            style={{ height: "auto" }}
-          />
-        </Link>
-        <div className="flex gap-6 uppercase text-pallaslightred">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="hover:opacity-70 transition-opacity"
-            >
-              {link.label}
-            </Link>
-          ))}
+    <>
+      <nav
+        className={`hidden md:block p-4 text-lg fixed w-full transition-colors z-10 ${
+          scrolled ? "bg-white shadow" : ""
+        }`}
+      >
+        <div className="flex items-center gap-6">
+          <Link href="/" className="hover:opacity-70 transition-opacity">
+            <Image
+              src="/Pallas-Logo_Logo With Name.png"
+              alt=""
+              width={140}
+              height={0}
+              style={{ height: "auto" }}
+            />
+          </Link>
+          <div className="flex gap-6 uppercase text-pallaslightred">
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="hover:opacity-70 transition-opacity"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+
+      <nav
+        className={`md:hidden p-4 text-lg fixed w-full transition-colors z-10 bg-white shadow`}
+      >
+        <Sheet>
+          <div className="flex justify-between items-center">
+            <div className="flex-1">
+              <Button asChild>
+                <SheetTrigger>X</SheetTrigger>
+              </Button>
+              <SheetContent>
+                <SheetHeader>
+                  <SheetTitle>Are you absolutely sure?</SheetTitle>
+                  <SheetDescription>
+                    This action cannot be undone. This will permanently delete
+                    your account and remove your data from our servers.
+                  </SheetDescription>
+                </SheetHeader>
+              </SheetContent>
+            </div>
+            <Link
+              href="/"
+              className="hover:opacity-70 transition-opacity flex-1"
+            >
+              <Image
+                src="/Pallas-Logo_Logo With Name.png"
+                alt=""
+                width={140}
+                height={0}
+                style={{ height: "auto" }}
+              />
+            </Link>
+            <div className="flex-1"></div>
+          </div>
+        </Sheet>
+      </nav>
+    </>
   );
 }
