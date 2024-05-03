@@ -68,7 +68,9 @@ export default function Navbar() {
     <>
       <nav
         className={`hidden md:block p-4 text-lg fixed w-full transition-colors z-10 ${
-          scrolled || path !== "/" ? "bg-white shadow" : ""
+          scrolled || (path !== "/" && path !== "/about")
+            ? "bg-white shadow"
+            : ""
         }`}
       >
         <div className="flex items-center gap-6">

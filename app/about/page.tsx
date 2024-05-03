@@ -31,7 +31,7 @@ const AboutContent = ({
   title: string;
   content: string;
 }) => (
-  <div className="p-8 md:min-h-96">
+  <div className="md:min-h-96">
     <Subheading>{title}</Subheading>
     <p>{content}</p>
   </div>
@@ -40,10 +40,12 @@ const AboutContent = ({
 export default function About() {
   return (
     <>
-      <section className="hidden md:block text-pallaslightred text-justify p-24 h-screen snap-center max-w-screen-2xl mx-auto pt-32">
-        <Heading>About Us</Heading>
+      <section className="hidden md:block text-pallaslightred text-justify p-24 h-screen snap-center max-w-screen-2xl mx-auto pt-32 relative">
+        <div className="mt-12">
+          <Heading>About Us</Heading>
+        </div>
 
-        <div className="flex flex-col md:grid grid-cols-2 gap-12">
+        <div className="flex flex-col md:grid grid-cols-2 gap-12 mt-16">
           <div>
             <p>
               <strong>Pallas Electrical</strong> is a designer and supplier of
@@ -61,7 +63,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="relative min-h-[40rem]">
+          <div className="relative min-h-[40rem] lg:hidden">
             <Image
               src="/about/pexels-pixabay-159279.jpg"
               alt=""
@@ -72,12 +74,10 @@ export default function About() {
             />
           </div>
         </div>
-      </section>
-      <div className="bg-pallaslightred w-full h-[4px] mt-8"></div>
-      <section className="hidden text-pallaslightred text-justify pt-24 md:grid grid-cols-2 items-stretch h-screen snap-center max-w-screen-2xl mx-auto">
-        <div className="relative min-h-96">
+
+        <div className="absolute h-screen w-5/12 top-0 right-0 hidden lg:block">
           <Image
-            src="/about/scott-blake-x-ghf9LjrVg-unsplash.jpg"
+            src="/about/pexels-pixabay-159279.jpg"
             alt=""
             fill
             style={{
@@ -85,48 +85,71 @@ export default function About() {
             }}
           />
         </div>
+      </section>
+      {/* <div className="bg-pallaslightred w-full h-[4px] mt-8"></div> */}
+      <section className="hidden text-pallaslightred text-justify pt-40 md:flex flex-col items-stretch h-screen snap-center max-w-screen-2xl mx-auto">
+        <div className="flex px-32">
+          <div className="relative min-h-96 w-5/12">
+            <Image
+              src="/about/scott-blake-x-ghf9LjrVg-unsplash.jpg"
+              alt=""
+              fill
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </div>
 
-        <AboutContent
-          title="Our Mission"
-          content="We are committed to creating a symphony of outstanding products,
+          <div className="w-7/12 pl-16">
+            <AboutContent
+              title="Our Mission"
+              content="We are committed to creating a symphony of outstanding products,
               operational excellence and exceptional customer service throught
               its unwavering expertise and unparalleled execution. Everyday
               Pallas Electrical will strive to contribute to the betterment of
               the lives of its team and clients."
-        />
+            />
+          </div>
+        </div>
 
-        <AboutContent
-          title="Our Vision"
-          content="To be a trusted, respected, and preferred world-class provider of
+        <div className="flex px-32 mt-12">
+          <div className="w-7/12 pr-16">
+            <AboutContent
+              title="Our Vision"
+              content="To be a trusted, respected, and preferred world-class provider of
               reliable supplier of power distribution products."
-        />
+            />
+          </div>
 
-        <div className="relative min-h-96">
-          <Image
-            src="/about/emmanuel-ikwuegbu-_2AlIm-F6pw-unsplash.jpg"
-            alt=""
-            fill
-            style={{
-              objectFit: "cover",
-            }}
-          />
+          <div className="relative min-h-96 w-5/12">
+            <Image
+              src="/about/emmanuel-ikwuegbu-_2AlIm-F6pw-unsplash.jpg"
+              alt=""
+              fill
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </div>
         </div>
       </section>
-      <section className="hidden text-pallaslightred text-justify pt-24 md:grid grid-cols-2 items-stretch h-screen snap-center max-w-screen-2xl mx-auto">
-        <div className="relative min-h-96">
-          <Image
-            src="/about/thisisengineering-raeng-FXgbqr-t7uw-unsplash.jpg"
-            alt=""
-            fill
-            style={{
-              objectFit: "cover",
-            }}
-          />
-        </div>
+      <section className="hidden text-pallaslightred text-justify pt-40 md:flex flex-col items-stretch h-screen snap-center max-w-screen-2xl mx-auto">
+        <div className="flex px-32">
+          <div className="relative min-h-96 w-5/12">
+            <Image
+              src="/about/thisisengineering-raeng-FXgbqr-t7uw-unsplash.jpg"
+              alt=""
+              fill
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </div>
 
-        <AboutContent
-          title="Our Team"
-          content="PALLAS Electrical is the brainchild of power line material
+          <div className="w-7/12 pl-16">
+            <AboutContent
+              title="Our Team"
+              content="PALLAS Electrical is the brainchild of power line material
               designers headquartered in Boston, Massachusetts, USA, guided by
               field and industry veterans based in Taiwan. We are run by
               forward-thinking individuals, enabling the company to deliver
@@ -134,25 +157,30 @@ export default function About() {
               Electrical is operated by a passionate workforce with a geographic
               footprint from the Americas to Asia in the electrical industry for
               over 15 years."
-        />
+            />
+          </div>
+        </div>
 
-        <AboutContent
-          title="Our Craft"
-          content="At core, PALLAS Electrical designs and supplies tested and true
+        <div className="flex px-32 mt-12">
+          <div className="w-7/12 pr-16">
+            <AboutContent
+              title="Our Craft"
+              content="At core, PALLAS Electrical designs and supplies tested and true
               high-quality power line products. Pledged to excellence, PALLAS
               Electrical provides top-notch products to power providers on
               programs of all sizes-be it multiple micro sites or vast lands."
-        />
-
-        <div className="relative min-h-96">
-          <Image
-            src="/about/pexels-pixabay-236089.jpg"
-            alt=""
-            fill
-            style={{
-              objectFit: "cover",
-            }}
-          />
+            />
+          </div>
+          <div className="relative min-h-96 w-5/12">
+            <Image
+              src="/about/pexels-pixabay-236089.jpg"
+              alt=""
+              fill
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </div>
         </div>
       </section>
 
