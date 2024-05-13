@@ -128,7 +128,7 @@ export default function Home() {
       </section>
 
       <section className="h-screen snap-center pt-24 pb-24">
-        <div className="flex flex-col items-center max-w-screen-2xl mx-auto">
+        <FadeInText className="flex flex-col items-center max-w-screen-2xl mx-auto">
           <h2 className="font-bold text-2xl mt-10 mb-8">WHAT WE PROVIDE</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div className="flex flex-col items-center">
@@ -200,7 +200,7 @@ export default function Home() {
               </Button>
             </div>
           </div>
-        </div>
+        </FadeInText>
       </section>
     </>
   );
