@@ -41,7 +41,7 @@ export default function Collection({
     <>
       <section
         id="collection"
-        className="pt-[86px] md:pt-32 min-h-screen h-full snap-center px-4"
+        className="pt-[86px] md:pt-32 min-h-screen px-4 pb-4"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-screen-xl mx-auto">
           <div className="max-w-[530px] w-full">

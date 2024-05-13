@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import productList from "@/assets/product-list.json";
 import Link from "next/link";
+import ProductItem from "@/components/sections/product-item";
 
 const catalogItems = [
   {
@@ -45,14 +46,14 @@ export default function Collection({
         <FadeInText
           className={`grid grid-cols-1 ${
             columns[collection as keyof typeof columns]
-          } h-full w-full mx-auto gap-1`}
+          } h-full w-full mx-auto`}
         >
           {products.map((product, idx) => (
             <Link
               key={product.href}
               href={`/catalog/${collection}/${product.href}`}
             >
-              <CatalogItem src={product.cover} name={product.name} />
+              <ProductItem src={product.cover} name={product.name} />
             </Link>
           ))}
         </FadeInText>

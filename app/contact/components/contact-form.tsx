@@ -111,7 +111,9 @@ export default function ContactForm() {
             isTextArea
             onChange={(value) => updateFormValue("message", value)}
           />
-          <Button type="submit">Send</Button>
+          <Button type="submit" className="bg-pallasred">
+            Send
+          </Button>
         </form>
       </div>
     </div>
