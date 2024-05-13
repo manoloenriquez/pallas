@@ -54,7 +54,16 @@ export default function Collection({
               <ProductItem src={product.cover} name={product.name} />
             </Link>
           ))}
-          <div className="border border-pallasred"></div>
+          <div className="border border-pallasred bg-pallasred grid place-items-center">
+            {/* <Link href="/contact">
+              <Button className="bg-pallasred mt-12">
+                Request Quote / Technical Data Sheet
+              </Button>
+            </Link> */}
+            <Link href="/" className="hover:opacity-70 transition-opacity">
+              <Image src="/WhitePallas.png" alt="" width={300} height={100} />
+            </Link>
+          </div>
         </FadeInText>
       </section>
     </>
