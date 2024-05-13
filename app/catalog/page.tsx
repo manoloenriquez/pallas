@@ -2,15 +2,18 @@ import FadeInText from "@/components/fadeintext";
 import CatalogItem from "@/components/sections/catalog-item";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const catalogItems = [
   {
     src: "/catalog/transmission.jpg",
     name: "Transmission",
+    href: "transmission",
   },
   {
     src: "/catalog/distribution.png",
     name: "Distribution",
+    href: "distribution",
   },
 ];
 
@@ -45,46 +48,13 @@ export default function Catalog() {
             />
           ))} */}
 
-          {catalogItems.map(({ src, name }) => (
-            <CatalogItem src={src} name={name} />
+          {catalogItems.map(({ src, name, href }) => (
+            <Link href={`/catalog/${href}`}>
+              <CatalogItem src={src} name={name} />
+            </Link>
           ))}
         </FadeInText>
       </section>
     </>
   );
 }
-
-// function CatalogItem({ src, name }: { src: string; name: string }) {
-
-//   return (
-//     <div className="flex flex-col w-full h-full">
-//       <div className="relative w-full h-full transition-opacity">
-//         {/* <div className="overflow-hidden h-full grayscale hover:grayscale-0 transition-all">
-//           <img
-//             src={src}
-//             alt=""
-//             className="w-full h-full object-cover"
-//             style={{ objectPosition: "center 50px" }}
-//           />
-//         </div> */}
-//         <div
-//           className="overflow-hidden h-full grayscale hover:grayscale-0 transition-all"
-//           style={{
-//             backgroundImage: `url('${src}')`,
-//             backgroundSize: "cover",
-//             backgroundPosition: "center center",
-//             backgroundRepeat: "no-repeat",
-//           }}
-//         ></div>
-//         <p
-//           className="text-4xl text-center text-pallaslightred mt-4 absolute top-[50%] left-[50%] justify-center"
-//           style={{
-//             transform: "translate(-50%, -50%)",
-//           }}
-//         >
-//           {name}
-//         </p>
-//       </div>
-//     </div>
-//   );
-// }
