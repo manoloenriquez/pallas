@@ -44,7 +44,7 @@ export default function Collection({
         className="pt-[86px] min-h-screen h-full snap-center"
       >
         <FadeInText
-          className={`grid grid-cols-1 ${
+          className={`flex flex-col md:grid ${
             columns[collection as keyof typeof columns]
           } h-full w-full mx-auto`}
         >
@@ -52,7 +52,7 @@ export default function Collection({
             <Link
               key={product.href}
               href={`/catalog/${collection}/${product.href}`}
-              className="overflow-hidden"
+              className="flex-1 overflow-hidden h-full"
             >
               <ProductItem src={product.cover} name={product.name} />
             </Link>
