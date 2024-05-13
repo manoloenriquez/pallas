@@ -33,7 +33,7 @@ export default function CatalogItem({
           }}
         ></div>
         <p
-          className="text-5xl text-center text-pallaslightred mt-4 absolute top-[50%] left-[50%] justify-center"
+          className="text-xl text-center text-pallaslightred mt-4 absolute top-[50%] left-[50%] justify-center"
           style={{
             transform: "translate(-50%, -50%)",
           }}

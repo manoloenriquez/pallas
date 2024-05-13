@@ -3,54 +3,78 @@
     {
       "name": "Fuse Cutout",
       "cover": "/products/Fuse Cutout Series/C-FCO.png",
-      "images": []
+      "images": [],
+      "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
+      "href": "lightning-arresters"
     },
     {
       "name": "Lightning Arresters",
       "cover": "/products/Lightning Arrester Series/C-LA.png",
-      "images": []
+      "images": [
+        "/products/Lightning Arrester Series/C-LA.png",
+        "/products/Lightning Arrester Series/COVER-Lightning Arrester.jpg",
+        "/products/Lightning Arrester Series/PELA-10_10.jpg"
+      ],
+      "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
+      "href": "lightning-arresters"
     },
     {
       "name": "Fuse Link",
       "cover": "/products/Pallas Electrical Fuse Links/C-FL.png",
-      "images": []
+      "images": [],
+      "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
+      "href": "lightning-arresters"
     },
     {
       "name": "Meter Base",
       "cover": "/products/Meter Mounting Equipment/C-MB.png",
-      "images": []
+      "images": [],
+      "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
+      "href": "lightning-arresters"
     },
     {
       "name": "Disconnect Switch",
       "cover": "",
-      "images": []
+      "images": [],
+      "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
+      "href": "lightning-arresters"
     },
     {
       "name": "Insulator (Pin & Spool)",
       "cover": "/products/Insulators/COVER-Insulator 55-5 .webp",
-      "images": []
+      "images": [],
+      "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
+      "href": "lightning-arresters"
     },
     {
       "name": "Fuse Tube",
       "cover": "/products/Fuse Cutout Series/COVER-FUSE TUBE.png",
-      "images": []
+      "images": [],
+      "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
+      "href": "lightning-arresters"
     }
   ],
   "transmission": [
     {
       "name": "69KV Transmission Products",
       "cover": "",
-      "images": []
+      "images": [],
+      "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
+      "href": "lightning-arresters"
     },
     {
       "name": "115KV Transmission Products",
       "cover": "",
-      "images": []
+      "images": [],
+      "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
+      "href": "lightning-arresters"
     },
     {
-      "name": "230KV Transmission Products",
+      "name": "250KV Transmission Products",
       "cover": "",
-      "images": []
+      "images": [],
+      "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
+      "href": "lightning-arresters"
     }
   ]
 }

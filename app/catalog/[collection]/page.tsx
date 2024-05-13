@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import productList from "@/assets/product-list.json";
+import Link from "next/link";
 
 const catalogItems = [
   {
@@ -47,7 +48,12 @@ export default function Collection({
           } h-full w-full mx-auto gap-1`}
         >
           {products.map((product, idx) => (
-            <CatalogItem src={product.cover} name={product.name} />
+            <Link
+              key={product.href}
+              href={`/catalog/${collection}/${product.href}`}
+            >
+              <CatalogItem src={product.cover} name={product.name} />
+            </Link>
           ))}
         </FadeInText>
       </section>

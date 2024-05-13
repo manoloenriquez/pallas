@@ -42,11 +42,13 @@ export default function ContactForm() {
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-
+    const EMAIL_SERVICE_ID = process.env.EMAIL_SERVICE_ID;
+    const EMAIL_TEMPLATE_ID = process.env.EMAIL_TEMPLATE_ID;
+    const EMAIL_PUBLIC_KEY = process.env.EMAIL_PUBLIC_KEY;
     try {
       await emailjs.send(
-        "service_bn237fa",
-        "template_vz58scg",
+        EMAIL_SERVICE_ID!,
+        EMAIL_TEMPLATE_ID!,
         {
           from_name: formValues.name,
           message: formValues.message,
@@ -54,7 +56,7 @@ export default function ContactForm() {
           contact: formValues.contact,
           email: formValues.email,
         },
-        "yaB_vKxTtM_KF_54k"
+        EMAIL_PUBLIC_KEY
       );
 
       clearForm();
