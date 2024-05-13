@@ -48,7 +48,7 @@ export default function Home() {
             </CarouselItem>
             <CarouselItem className="h-full relative">
               <Image
-                src="/mohammad-mardani-U6x3xkzeFIE-unsplash.jpg"
+                src="/home/2.jpg"
                 alt=""
                 fill={true}
                 style={{
@@ -58,7 +58,7 @@ export default function Home() {
             </CarouselItem>
             <CarouselItem className="h-full relative">
               <Image
-                src="/mohammad-mardani-U6x3xkzeFIE-unsplash.jpg"
+                src="/home/3.jpg"
                 alt=""
                 fill={true}
                 style={{
