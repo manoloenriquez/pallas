@@ -9,68 +9,12 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import FadeInText from "@/components/fadeintext";
+import Masthead from "@/components/sections/masthead";
 
 export default function Home() {
   return (
     <>
-      <section className="h-screen snap-center flex flex-col-reverse md:flex-row md:justify-between md:items-center">
-        {/* Text */}
-        <div className="p-4 lg:p-24">
-          <FadeInText>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl mb-4">
-              <span className="text-pallaslightred">
-                Unwavering <br />
-                Expertise.
-              </span>{" "}
-              <br />
-              <span className="text-pallasdarkred">
-                Unmatched <br />
-                Execution.
-              </span>
-            </h1>
-          </FadeInText>
-          <Button asChild className="bg-pallasred">
-            <Link href="#">MORE INFO</Link>
-          </Button>
-        </div>
-        {/* Image slideshow */}
-        <Carousel className="h-96 md:h-screen w-full md:w-5/12">
-          <CarouselContent className="h-96 md:h-screen">
-            <CarouselItem className="h-full relative">
-              <Image
-                src="/mohammad-mardani-U6x3xkzeFIE-unsplash.jpg"
-                alt=""
-                fill={true}
-                style={{
-                  objectFit: "cover",
-                }}
-              />
-            </CarouselItem>
-            <CarouselItem className="h-full relative">
-              <Image
-                src="/home/2.jpg"
-                alt=""
-                fill={true}
-                style={{
-                  objectFit: "cover",
-                }}
-              />
-            </CarouselItem>
-            <CarouselItem className="h-full relative">
-              <Image
-                src="/home/3.jpg"
-                alt=""
-                fill={true}
-                style={{
-                  objectFit: "cover",
-                }}
-              />
-            </CarouselItem>
-          </CarouselContent>
-          <CarouselPrevious className="ms-[60px]" />
-          <CarouselNext className="me-[60px]" />
-        </Carousel>
-      </section>
+      <Masthead />
 
       <section className="h-screen snap-center bg-[#e7e7e7] px-4 pt-24">
         <div className="flex flex-col md:flex-row max-w-screen-2xl mx-auto">
@@ -146,12 +90,6 @@ export default function Home() {
                 indoor, outdoor, decorative, <br /> emergency, controls,
                 inverters
               </p>
-              <Button
-                asChild
-                className="md:w-6/12 text-lg shadow hover:opacity-70 transition-opacity bg-pallasred"
-              >
-                <Link href="#">MORE INFO</Link>
-              </Button>
             </div>
 
             <div className="flex flex-col items-center">
@@ -169,12 +107,6 @@ export default function Home() {
                 indoor, outdoor, decorative, <br /> emergency, controls,
                 inverters
               </p>
-              <Button
-                asChild
-                className="md:w-6/12 text-lg shadow hover:opacity-70 transition-opacity bg-pallasred"
-              >
-                <Link href="#">MORE INFO</Link>
-              </Button>
             </div>
 
             <div className="flex flex-col items-center">
@@ -192,12 +124,6 @@ export default function Home() {
                 indoor, outdoor, decorative, <br /> emergency, controls,
                 inverters
               </p>
-              <Button
-                asChild
-                className="md:w-6/12 text-lg shadow hover:opacity-70 transition-opacity bg-pallasred"
-              >
-                <Link href="#">MORE INFO</Link>
-              </Button>
             </div>
           </div>
         </FadeInText>
