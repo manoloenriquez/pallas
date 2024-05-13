@@ -41,7 +41,7 @@ const AboutContent = ({
 export default function About() {
   return (
     <>
-      <section className="hidden md:block text-pallaslightred text-justify p-24 h-screen snap-center max-w-screen-2xl mx-auto pt-32 relative">
+      <section className="hidden md:block text-pallaslightred text-justify p-24 h-screen snap-center mx-auto pt-32 relative">
         <div className="mt-12">
           <Heading>About Us</Heading>
         </div>
