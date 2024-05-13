@@ -10,6 +10,7 @@ import Link from "next/link";
 import Image from "next/image";
 import FadeInText from "@/components/fadeintext";
 import Masthead from "@/components/sections/masthead";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -71,8 +72,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-screen snap-center pt-24 pb-24">
-        <FadeInText className="flex flex-col items-center max-w-screen-2xl mx-auto">
+      <section className="h-screen snap-center pt-24 flex flex-col">
+        <FadeInText className="flex flex-col items-center max-w-screen-2xl mx-auto my-auto">
           <h2 className="font-bold text-2xl mt-10 mb-8">WHAT WE PROVIDE</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div className="flex flex-col items-center">
@@ -127,6 +128,9 @@ export default function Home() {
             </div>
           </div>
         </FadeInText>
+        <div className="mt-auto">
+          <Footer />
+        </div>
       </section>
     </>
   );
