@@ -90,7 +90,9 @@ export default function Collection({
             </h1>
             <p className="text-justify">{data.description}</p>
             <Link href="/contact">
-              <Button className="bg-pallasred mt-12">Request Quote</Button>
+              <Button className="bg-pallasred mt-12">
+                Request Quote / Technical Data Sheet
+              </Button>
             </Link>
           </FadeInText>
         </div>

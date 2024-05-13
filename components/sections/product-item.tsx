@@ -21,13 +21,20 @@ export default function ProductItem({
       onMouseLeave={unhovered}
     >
       <div className="relative w-full h-full transition-opacity">
-        <p className="text-3xl text-center text-white bg-pallasred border-b-2 border-black mt-0 py-4 justify-center whitespace-nowrap z-50 relative">
-          {name}
-        </p>
         <div
-          className={`overflow-hidden h-full transition-all mt-[-16px] ${
-            isHovered ? "grayscale-0 scale-105" : "grayscale"
+          className={`absolute top-0 left-0 h-full w-full bg-pallasred text-white transition-all ${
+            isHovered ? "opacity-100" : "opacity-0"
           }`}
+        ></div>
+        <div
+          className={`absolute top-0 left-0 text-white flex justify-center items-center text-center h-full w-full transition-all ${
+            isHovered ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          {name}
+        </div>
+        <div
+          className={`overflow-hidden h-full transition-all`}
           style={{
             backgroundImage: `url('${src}')`,
             backgroundSize: "contain",
