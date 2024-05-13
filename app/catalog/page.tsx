@@ -23,10 +23,10 @@ export default function Catalog() {
 
       <section
         id="collection"
-        className="pt-[86px] min-h-screen snap-center flex items-center justify-center"
+        className="pt-[86px] min-h-screen h-full snap-center"
       >
-        <FadeInText className="grid grid-cols-2 md:grid-cols-3 h-full w-full mx-auto gap-1">
-          {[...Array(6)].map((_, idx) => (
+        <FadeInText className="grid grid-cols-3 md:grid-cols-3 h-full w-full mx-auto gap-1">
+          {[...Array(3)].map((_, idx) => (
             <CatalogItem
               src="https://via.placeholder.com/100"
               name={`Product ${idx + 1}`}
