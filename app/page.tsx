@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <Masthead />
 
-      <section className="h-screen snap-center bg-[#e7e7e7] px-4 pt-24">
+      <section className="min-h-screen snap-start md:snap-center bg-[#e7e7e7] px-4 pt-24">
         <div className="flex flex-col md:flex-row max-w-screen-2xl mx-auto">
           <FadeInText className="p-4 lg:p-24 md:w-5/12">
             <h2 className="text-2xl">WHO WE ARE</h2>
@@ -72,7 +72,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-screen snap-center pt-24 flex flex-col">
+      <section className="min-h-screen snap-start md:snap-center pt-24 flex flex-col">
         <FadeInText className="flex flex-col items-center max-w-screen-2xl mx-auto my-auto">
           <h2 className="font-bold text-2xl mt-10 mb-8">WHAT WE PROVIDE</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
