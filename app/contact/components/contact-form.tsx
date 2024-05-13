@@ -4,8 +4,18 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
-import { useEffect, useState } from "react";
+import emailjs from "emailjs-com";
+
+import { FormEvent, useEffect, useState } from "react";
+import { sendEmail } from "../actions";
 
 export default function ContactForm() {
   const [formValues, setFormValues] = useState({
@@ -18,6 +28,39 @@ export default function ContactForm() {
 
   function updateFormValue(key: keyof typeof formValues, value: string) {
     setFormValues((curr) => ({ ...formValues, [key]: value }));
+  }
+
+  function clearForm() {
+    setFormValues({
+      name: "",
+      email: "",
+      product: "",
+      contact: "",
+      message: "",
+    });
+  }
+
+  async function handleSubmit(e: FormEvent) {
+    e.preventDefault();
+
+    try {
+      await emailjs.send(
+        "service_bn237fa",
+        "template_vz58scg",
+        {
+          from_name: formValues.name,
+          message: formValues.message,
+          product: formValues.product,
+          contact: formValues.contact,
+          email: formValues.email,
+        },
+        "yaB_vKxTtM_KF_54k"
+      );
+
+      clearForm();
+    } catch (e) {
+      console.error(e);
+    }
   }
 
   return (
@@ -34,12 +77,38 @@ export default function ContactForm() {
         ></iframe>
       </div>
       <div className="p-8">
-        <form className="flex flex-col gap-4">
-          <InputGroup name="name" label="Name" />
-          <InputGroup name="email" label="Email" />
-          <InputGroup name="product" label="Product" />
-          <InputGroup name="contact" label="Phone Number" />
-          <InputGroup name="message" label="Message" isTextArea />
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <InputGroup
+            name="name"
+            value={formValues.name}
+            label="Name"
+            onChange={(value) => updateFormValue("name", value)}
+          />
+          <InputGroup
+            name="email"
+            value={formValues.email}
+            label="Email"
+            onChange={(value) => updateFormValue("email", value)}
+          />
+          <ProductSelect
+            name="product"
+            value={formValues.product}
+            label="Product"
+            onChange={(value) => updateFormValue("product", value)}
+          />
+          <InputGroup
+            name="contact"
+            value={formValues.contact}
+            label="Phone Number"
+            onChange={(value) => updateFormValue("contact", value)}
+          />
+          <InputGroup
+            name="message"
+            value={formValues.message}
+            label="Message"
+            isTextArea
+            onChange={(value) => updateFormValue("message", value)}
+          />
           <Button type="submit">Send</Button>
         </form>
       </div>
@@ -49,12 +118,14 @@ export default function ContactForm() {
 
 const InputGroup = ({
   name,
+  value,
   label,
   placeholder,
   onChange,
   isTextArea,
 }: {
   name: string;
+  value: string;
   label: string;
   placeholder?: string;
   onChange?: (value: string) => void;
@@ -65,15 +136,62 @@ const InputGroup = ({
     {isTextArea ? (
       <Textarea
         name={name}
+        value={value}
         placeholder={placeholder}
         onChange={onChange ? (e) => onChange(e.target.value) : undefined}
       />
     ) : (
       <Input
         name={name}
+        value={value}
         placeholder={placeholder}
         onChange={onChange ? (e) => onChange(e.target.value) : undefined}
       />
     )}
   </div>
 );
+
+const ProductSelect = ({
+  name,
+  value,
+  label,
+  placeholder,
+  onChange,
+}: {
+  name: string;
+  value: string;
+  label: string;
+  placeholder?: string;
+  onChange?: (value: string) => void;
+}) => {
+  const items = [
+    "Fuse Cutout",
+    "Lightning Arresters",
+    "Fuse Link",
+    "Meter Base",
+    "Disconnect Switch",
+    "Insulator (Pin & Spool)",
+    "Fuse Tube",
+    "69KV Transmission Products",
+    "115KV Transmission Products",
+    "230KV Transmission Products",
+  ];
+
+  return (
+    <div className="flex flex-col gap-2">
+      <Label htmlFor={name}>{label}</Label>
+      <Select name={name} onValueChange={onChange} value={value}>
+        <SelectTrigger>
+          <SelectValue placeholder="Product" />
+        </SelectTrigger>
+        <SelectContent>
+          {items.map((item) => (
+            <SelectItem value={item} key={item}>
+              {item}
+            </SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
+    </div>
+  );
+};

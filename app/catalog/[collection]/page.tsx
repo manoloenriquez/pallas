@@ -3,6 +3,7 @@ import CatalogItem from "@/components/sections/catalog-item";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import productList from "@/assets/product-list.json";
 
 const catalogItems = [
   {
@@ -21,6 +22,8 @@ export default function Collection({
   params: { collection: string };
 }) {
   const { collection } = params;
+  const products = productList[collection as keyof typeof productList];
+  console.log(products);
 
   const gridSize = {
     transmission: 3,
@@ -43,14 +46,9 @@ export default function Collection({
             columns[collection as keyof typeof columns]
           } h-full w-full mx-auto gap-1`}
         >
-          {[...Array(gridSize[collection as keyof typeof gridSize])].map(
-            (_, idx) => (
-              <CatalogItem
-                src="https://via.placeholder.com/100"
-                name={`Product ${idx + 1}`}
-              />
-            )
-          )}
+          {products.map((product, idx) => (
+            <CatalogItem src={product.cover} name={product.name} />
+          ))}
         </FadeInText>
       </section>
     </>

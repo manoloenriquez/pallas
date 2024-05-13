@@ -1,0 +1,56 @@
+{
+  "distribution": [
+    {
+      "name": "Fuse Cutout",
+      "cover": "/products/Fuse Cutout Series/COVER-FCO.jpg",
+      "images": []
+    },
+    {
+      "name": "Lightning Arresters",
+      "cover": "/products/Lightning Arrester Series/COVER-Lightning Arrester.jpg",
+      "images": []
+    },
+    {
+      "name": "Fuse Link",
+      "cover": "/products/Pallas Electrical Fuse Links/COVER-FUSE LINK.jpg",
+      "images": []
+    },
+    {
+      "name": "Meter Base",
+      "cover": "/products/Meter Mounting Equipment/COVER-METER BASE.jpg",
+      "images": []
+    },
+    {
+      "name": "Disconnect Switch",
+      "cover": "",
+      "images": []
+    },
+    {
+      "name": "Insulator (Pin & Spool)",
+      "cover": "",
+      "images": []
+    },
+    {
+      "name": "Fuse Tube",
+      "cover": "/products/Fuse Cutout Series/COVER-FUSE TUBE.png",
+      "images": []
+    }
+  ],
+  "transmission": [
+    {
+      "name": "69KV Transmission Products",
+      "cover": "",
+      "images": []
+    },
+    {
+      "name": "115KV Transmission Products",
+      "cover": "",
+      "images": []
+    },
+    {
+      "name": "230KV Transmission Products",
+      "cover": "",
+      "images": []
+    }
+  ]
+}
