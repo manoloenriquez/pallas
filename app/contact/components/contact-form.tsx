@@ -177,8 +177,8 @@ const ProductSelect = ({
     "Insulator (Pin & Spool)",
     "Fuse Tube",
     "69KV Transmission Products",
-    "115KV Transmission Products",
-    "230KV Transmission Products",
+    "110KV Transmission Products",
+    "250KV Transmission Products",
   ];
 
   return (

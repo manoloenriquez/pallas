@@ -33,7 +33,27 @@ export default function Collection({
   params: { collection: string; product: string };
 }) {
   const { collection, product } = params;
-  const data = productList["distribution"][1];
+  const productIdxMap = {
+    distribution: {
+      "fuse-cutout": 0,
+      "lightning-arresters": 1,
+      "fuse-link": 2,
+      "meter-base": 3,
+      "disconnect-switch": 4,
+      insulator: 5,
+      "fuse-tube": 6,
+    },
+    transmission: {
+      "69kv": 0,
+      "110kv": 1,
+      "250kv": 2,
+    },
+  };
+  const data =
+    productList[collection as keyof typeof productList][
+      // @ts-ignore
+      productIdxMap[collection][product]
+    ];
 
   const [activeImg, setActiveImg] = useState(0);
 
@@ -88,7 +108,10 @@ export default function Collection({
             <h1 className="text-4xl font-bold text-pallasred mb-8">
               {data.name}
             </h1>
-            <p className="text-justify">{data.description}</p>
+            <p
+              className="text-justify"
+              dangerouslySetInnerHTML={{ __html: data.description }}
+            ></p>
             <Link href="/contact">
               <Button className="bg-pallasred mt-12">
                 Request Quote / Technical Data Sheet

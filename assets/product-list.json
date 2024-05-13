@@ -4,7 +4,7 @@
       "name": "Fuse Cutout",
       "cover": "/products/Fuse Cutout Series/C-FCO.png",
       "images": ["/products/Fuse Cutout Series/C-FCO.png"],
-      "description": "",
+      "description": "<p>Drop-out Fuse Cut Out and load switch Fuse Cut Out are outdoor high voltage protective devices, tube connected with incoming feeder of distribution transformer or distribution lines, it mainly protects transformers or lines from short circuits and overloading current.&nbsp;</p><p><br></p><p >It is composed of an insulated insulator support and a fuse tube, static contacts are affixed on two sides of the insulator support and the moving contact is installed on two ends of the fuse tubes. The Fuse tube is composed of an inside arc-extinguishing tube. The Outer phenolic compound paper tube or epoxy glass tube, load switching Fuse Cutout provides enforced elastic auxiliary contacts and arc-extinguishing enclosure switching on-off loading current. All Fuse Cutouts comply according to ANSI Standards.</p>",
       "href": "fuse-cutout"
     },
     {
@@ -21,37 +21,37 @@
     {
       "name": "Fuse Link",
       "cover": "/products/Pallas Electrical Fuse Links/C-FL.png",
-      "images": [],
-      "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
-      "href": "lightning-arresters"
+      "images": ["/products/Pallas Electrical Fuse Links/C-FL.png"],
+      "description": "<p ><strong>ACCURATE TIME-CURRENT CHARACTERISTICS</strong></p><p >The fuse element adopts the accurately tested material, high purity silver, or silver-copper eutectic or nickel chrome eutectic, based on different rated current. The fuse element wire is extruded by a mold of high accuracy. The cross section is inspected by laser micrometer to ensure the accuracy, while careful assembly guarantees no crack, shrinkage or twist which affects the time-current accuracy.</p><p><br></p><p ><strong>DURABILITY</strong></p><p >Swaged connected end and high strength strain wire make the fuse link not affected by aging, vibration, or high current impulse which may heat the fuse element nearly to the severing point. When the fuse link in the 1st phase or 2nd phase operates in a three phase circuit, only the melted fuse link needs to be replaced, there will be no need to replace all the fuse links in the circuit.</p><p><br></p><p ><strong>GOOD FAULT INTERRUPTING CAPABILITY</strong></p><p >Can reliably interrupt the inside fault at the first and secondary side of transformer, short-circuit fault of bushing at secondary side of transformer bushing, and short-circuit fault between transformer bushing at transformer secondary side and air switch, so as to protect transformer effectively.</p>",
+      "href": "fuse-link"
     },
     {
       "name": "Meter Base",
       "cover": "/products/Meter Mounting Equipment/C-MB.png",
-      "images": [],
-      "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
-      "href": "lightning-arresters"
+      "images": ["/products/Meter Mounting Equipment/C-MB.png"],
+      "description": "PALLAS Electrical meter sockets can be installed in homes with light load current requirements of 100 amps, up to the demanding requirements of the large load currents, requiring a single 320-amp meter socket or multiple meter sockets feeding multiple service panels.",
+      "href": "meter-base"
     },
     {
       "name": "Disconnect Switch",
       "cover": "",
       "images": [],
       "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
-      "href": "lightning-arresters"
+      "href": "disconnect-switch"
     },
     {
       "name": "Insulator (Pin & Spool)",
       "cover": "/products/Insulators/COVER-Insulator 55-5 .webp",
-      "images": [],
+      "images": ["/products/Insulators/COVER-Insulator 55-5 .webp"],
       "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
-      "href": "lightning-arresters"
+      "href": "insulator"
     },
     {
       "name": "Fuse Tube",
       "cover": "/products/Fuse Cutout Series/COVER-FUSE TUBE.png",
-      "images": [],
+      "images": ["/products/Fuse Cutout Series/COVER-FUSE TUBE.png"],
       "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
-      "href": "lightning-arresters"
+      "href": "fuse-tube"
     }
   ],
   "transmission": [
@@ -63,7 +63,7 @@
       "href": "lightning-arresters"
     },
     {
-      "name": "115KV Transmission Products",
+      "name": "110KV Transmission Products",
       "cover": "",
       "images": [],
       "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",

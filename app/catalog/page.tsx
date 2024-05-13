@@ -49,7 +49,7 @@ export default function Catalog() {
           ))} */}
 
           {catalogItems.map(({ src, name, href }) => (
-            <Link href={`/catalog/${href}`}>
+            <Link key={href} href={`/catalog/${href}`}>
               <CatalogItem src={src} name={name} />
             </Link>
           ))}
