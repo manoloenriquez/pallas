@@ -39,10 +39,7 @@ export default function Collection({
 
   return (
     <>
-      <section
-        id="collection"
-        className="pt-[86px] min-h-screen h-full snap-center"
-      >
+      <section id="collection" className="pt-[86px] min-h-screen md:h-full">
         <FadeInText
           className={`flex flex-col md:grid ${
             columns[collection as keyof typeof columns]
@@ -52,7 +49,7 @@ export default function Collection({
             <Link
               key={product.href}
               href={`/catalog/${collection}/${product.href}`}
-              className="flex-1 overflow-hidden h-full"
+              className="flex-1 overflow-hidden h-full min-h-[400px]"
             >
               <ProductItem src={product.cover} name={product.name} />
             </Link>

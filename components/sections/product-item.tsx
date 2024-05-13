@@ -16,12 +16,12 @@ export default function ProductItem({
 
   return (
     <div
-      className="flex-1 flex flex-col w-full h-full overflow-hidden cursor-pointer border border-black"
+      className="flex-1 flex flex-col w-full h-full overflow-hidden cursor-pointer border border-black min-h-[400px]"
       onMouseEnter={hovered}
       onMouseLeave={unhovered}
     >
       <div className="relative w-full h-full transition-opacity">
-        <p className="text-3xl text-center text-white bg-pallasred border-b-2 border-black mt-0 py-4 justify-center whitespace-nowrap">
+        <p className="text-3xl text-center text-white bg-pallasred border-b-2 border-black mt-0 py-4 justify-center whitespace-nowrap z-10">
           {name}
         </p>
         <div
