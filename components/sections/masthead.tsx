@@ -48,8 +48,41 @@ export default function Masthead() {
         </Button>
       </div>
       {/* Image slideshow */}
-      <Carousel className="h-96 md:h-screen w-full md:w-5/12">
+      <Carousel
+        opts={{ loop: true }}
+        className="h-96 md:h-screen w-full md:w-5/12"
+      >
         <CarouselContent className="h-96 md:h-screen">
+          <CarouselItem className="h-full relative">
+            <Image
+              src="/mohammad-mardani-U6x3xkzeFIE-unsplash.jpg"
+              alt=""
+              fill={true}
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </CarouselItem>
+          <CarouselItem className="h-full relative">
+            <Image
+              src="/home/2.jpg"
+              alt=""
+              fill={true}
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </CarouselItem>
+          <CarouselItem className="h-full relative">
+            <Image
+              src="/home/3.jpg"
+              alt=""
+              fill={true}
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </CarouselItem>
           <CarouselItem className="h-full relative">
             <Image
               src="/mohammad-mardani-U6x3xkzeFIE-unsplash.jpg"
