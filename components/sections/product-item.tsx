@@ -25,7 +25,7 @@ export default function ProductItem({
           {name}
         </p>
         <div
-          className={`overflow-hidden h-full transition-all ${
+          className={`overflow-hidden h-full transition-all mt-[-16px] ${
             isHovered ? "grayscale-0 scale-105" : "grayscale"
           }`}
           style={{

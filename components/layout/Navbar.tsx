@@ -103,17 +103,21 @@ export default function Navbar() {
         <Sheet>
           <div className="flex justify-between items-center">
             <div className="flex-1">
-              <Button asChild>
+              <Button className="bg-pallasred" asChild>
                 <SheetTrigger>X</SheetTrigger>
               </Button>
               <SheetContent>
-                <SheetHeader>
-                  <SheetTitle>Are you absolutely sure?</SheetTitle>
-                  <SheetDescription>
-                    This action cannot be undone. This will permanently delete
-                    your account and remove your data from our servers.
-                  </SheetDescription>
-                </SheetHeader>
+                <div className="flex flex-col gap-4">
+                  {links.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="hover:opacity-70 transition-opacity border-b"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
               </SheetContent>
             </div>
             <Link
