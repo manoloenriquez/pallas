@@ -9,19 +9,20 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { PropsWithChildren } from "react";
+import FadeInText from "@/components/fadeintext";
 
 const Heading = ({ children }: PropsWithChildren) => (
-  <div>
+  <FadeInText>
     <h2 className="text-5xl mb-2">{children}</h2>
     <div className="bg-pallaslightred w-2/12 h-[4px] mb-4"></div>
-  </div>
+  </FadeInText>
 );
 
 const Subheading = ({ children }: PropsWithChildren) => (
-  <div>
+  <FadeInText>
     <h1 className="text-5xl mb-2">{children}</h1>
     <div className="bg-pallaslightred w-4/12 h-[4px] mb-4"></div>
-  </div>
+  </FadeInText>
 );
 
 const AboutContent = ({
@@ -31,10 +32,10 @@ const AboutContent = ({
   title: string;
   content: string;
 }) => (
-  <div className="md:min-h-96">
+  <FadeInText className="md:min-h-96">
     <Subheading>{title}</Subheading>
     <p>{content}</p>
-  </div>
+  </FadeInText>
 );
 
 export default function About() {
@@ -46,7 +47,7 @@ export default function About() {
         </div>
 
         <div className="flex flex-col md:grid grid-cols-2 gap-12 mt-16">
-          <div>
+          <FadeInText>
             <p>
               <strong>Pallas Electrical</strong> is a designer and supplier of
               true high-quality power distribution products such as Fuse
@@ -61,8 +62,7 @@ export default function About() {
               Pallas Electrical guarantees exceptional products that power homes
               and business
             </p>
-          </div>
-
+          </FadeInText>
           <div className="relative min-h-[40rem] lg:hidden">
             <Image
               src="/about/pexels-pixabay-159279.jpg"

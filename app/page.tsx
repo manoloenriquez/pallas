@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import Link from "next/link";
 import Image from "next/image";
+import FadeInText from "@/components/fadeintext";
 
 export default function Home() {
   return (
@@ -15,17 +16,19 @@ export default function Home() {
       <section className="h-screen snap-center flex flex-col-reverse md:flex-row md:justify-between md:items-center">
         {/* Text */}
         <div className="p-4 lg:p-24">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl mb-4">
-            <span className="text-pallaslightred">
-              Unwavering <br />
-              Expertise.
-            </span>{" "}
-            <br />
-            <span className="text-pallasdarkred">
-              Unmatched <br />
-              Execution.
-            </span>
-          </h1>
+          <FadeInText>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl mb-4">
+              <span className="text-pallaslightred">
+                Unwavering <br />
+                Expertise.
+              </span>{" "}
+              <br />
+              <span className="text-pallasdarkred">
+                Unmatched <br />
+                Execution.
+              </span>
+            </h1>
+          </FadeInText>
           <Button asChild className="bg-pallasred">
             <Link href="#">MORE INFO</Link>
           </Button>
@@ -71,7 +74,7 @@ export default function Home() {
 
       <section className="h-screen snap-center bg-[#e7e7e7] px-4 pt-24">
         <div className="flex flex-col md:flex-row max-w-screen-2xl mx-auto">
-          <div className="p-4 lg:p-24 md:w-5/12">
+          <FadeInText className="p-4 lg:p-24 md:w-5/12">
             <h2 className="text-2xl">WHO WE ARE</h2>
             <h2 className="text-4xl sm:text-5xl md:text-6xl">
               We are{" "}
@@ -94,7 +97,7 @@ export default function Home() {
             <Button asChild className="bg-pallasred">
               <Link href="/catalog">SEE CATALOGUE</Link>
             </Button>
-          </div>
+          </FadeInText>
           <div className="flex flex-col self-center gap-6 py-8 md:w-7/12">
             <Image
               src="/pexels-wencheng-jiang-7340354.jpg"

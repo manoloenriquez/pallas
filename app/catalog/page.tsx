@@ -22,7 +22,7 @@ export default function Catalog() {
 
       <section
         id="collection"
-        className="py-24 px-8 min-h-screen snap-center flex items-center justify-center"
+        className="pt-24 px-8 min-h-screen snap-center flex items-center justify-center"
       >
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-screen-lg w-full mx-auto">
           {[...Array(6)].map((_, idx) => (
@@ -40,7 +40,7 @@ export default function Catalog() {
 function CatalogItem({ src, name }: { src: string; name: string }) {
   return (
     <div className="flex flex-col w-full">
-      <div className="overflow-hidden rounded-2xl border-pallaslightred border-4">
+      <div className="overflow-hidden rounded-2xl border-pallaslightred">
         <img src={src} alt="" className="w-full h-full object-cover" />
       </div>
       <p className="text-center text-pallaslightred mt-4">{name}</p>
