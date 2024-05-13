@@ -52,10 +52,12 @@ export default function Collection({
             <Link
               key={product.href}
               href={`/catalog/${collection}/${product.href}`}
+              className="overflow-hidden"
             >
               <ProductItem src={product.cover} name={product.name} />
             </Link>
           ))}
+          <div className="border border-pallasred"></div>
         </FadeInText>
       </section>
     </>

@@ -33,7 +33,7 @@ export default function ProductItem({
           }}
         ></div>
         <p
-          className="text-3xl text-center text-pallaslightred mt-4 absolute top-0 left-[50%] justify-center"
+          className="text-3xl text-center text-pallaslightred mt-4 absolute top-0 left-[50%] justify-center whitespace-nowrap"
           style={{
             transform: "translate(-50%, 0)",
           }}

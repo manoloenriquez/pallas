@@ -3,9 +3,9 @@
     {
       "name": "Fuse Cutout",
       "cover": "/products/Fuse Cutout Series/C-FCO.png",
-      "images": [],
-      "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
-      "href": "lightning-arresters"
+      "images": ["/products/Fuse Cutout Series/C-FCO.png"],
+      "description": "",
+      "href": "fuse-cutout"
     },
     {
       "name": "Lightning Arresters",
