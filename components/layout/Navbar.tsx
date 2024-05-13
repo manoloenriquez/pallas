@@ -67,7 +67,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`hidden md:block p-4 text-lg fixed w-full transition-colors z-10 ${
+        className={`h-[86px] hidden md:block p-4 text-lg fixed w-full transition-colors z-10 ${
           scrolled || (path !== "/" && path !== "/about")
             ? "bg-white shadow"
             : ""
@@ -98,7 +98,7 @@ export default function Navbar() {
       </nav>
 
       <nav
-        className={`md:hidden p-4 text-lg fixed w-full transition-colors z-10 bg-white shadow`}
+        className={`h-[86px] md:hidden p-4 text-lg fixed w-full transition-colors z-10 bg-white shadow`}
       >
         <Sheet>
           <div className="flex justify-between items-center">

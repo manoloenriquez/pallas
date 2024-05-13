@@ -184,7 +184,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="text-pallaslightred text-justif md:hidden pt-24 p-8 h-screen snap-center max-w-screen-2xl mx-auto">
+      <section className="text-pallaslightred text-justif md:hidden pt-[86px] p-8 h-screen snap-center max-w-screen-2xl mx-auto">
         <Heading>About Us</Heading>
 
         <div className="flex flex-col md:grid grid-cols-2 gap-4">
@@ -221,7 +221,7 @@ export default function About() {
         </div>
       </section>
       <div className="bg-pallaslightred w-full h-[4px] mt-8"></div>
-      <section className="text-pallaslightred text-justify pt-24 md:hidden flex flex-col items-stretch h-screen snap-center max-w-screen-2xl mx-auto">
+      <section className="text-pallaslightred text-justify pt-[86px] md:hidden flex flex-col items-stretch h-screen snap-center max-w-screen-2xl mx-auto">
         <div className="relative min-h-96">
           <Image
             src="/about/scott-blake-x-ghf9LjrVg-unsplash.jpg"
@@ -242,7 +242,7 @@ export default function About() {
               the lives of its team and clients."
         />
       </section>
-      <section className="text-pallaslightred text-justify pt-24 md:hidden flex flex-col items-stretch h-screen snap-center max-w-screen-2xl mx-auto">
+      <section className="text-pallaslightred text-justify pt-[86px] md:hidden flex flex-col items-stretch h-screen snap-center max-w-screen-2xl mx-auto">
         <div className="relative min-h-96">
           <Image
             src="/about/emmanuel-ikwuegbu-_2AlIm-F6pw-unsplash.jpg"
@@ -260,7 +260,7 @@ export default function About() {
               reliable supplier of power distribution products."
         />
       </section>
-      <section className="text-pallaslightred text-justify pt-24 md:hidden flex flex-col items-stretch h-screen snap-center max-w-screen-2xl mx-auto">
+      <section className="text-pallaslightred text-justify pt-[86px] md:hidden flex flex-col items-stretch h-screen snap-center max-w-screen-2xl mx-auto">
         <div className="relative min-h-96">
           <Image
             src="/about/thisisengineering-raeng-FXgbqr-t7uw-unsplash.jpg"
@@ -284,7 +284,7 @@ export default function About() {
               over 15 years."
         />
       </section>
-      <section className="text-pallaslightred text-justify pt-24 md:hidden flex flex-col items-stretch h-screen snap-center max-w-screen-2xl mx-auto">
+      <section className="text-pallaslightred text-justify pt-[86px] md:hidden flex flex-col items-stretch h-screen snap-center max-w-screen-2xl mx-auto">
         <div className="relative min-h-96">
           <Image
             src="/about/pexels-pixabay-236089.jpg"

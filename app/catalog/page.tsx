@@ -6,7 +6,7 @@ export default function Catalog() {
   return (
     <>
       <section
-        className="pt-24 h-screen grid place-items-center snap-center"
+        className="pt-[86px] h-screen grid place-items-center snap-center"
         style={{
           backgroundImage: "url('/catalog-bg.jpg')",
           backgroundPosition: "center 30px",
@@ -23,9 +23,9 @@ export default function Catalog() {
 
       <section
         id="collection"
-        className="pt-24 px-8 min-h-screen snap-center flex items-center justify-center"
+        className="pt-[86px] min-h-screen snap-center flex items-center justify-center"
       >
-        <FadeInText className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-screen-lg w-full mx-auto">
+        <FadeInText className="grid grid-cols-2 md:grid-cols-3 h-full w-full mx-auto gap-1">
           {[...Array(6)].map((_, idx) => (
             <CatalogItem
               src="https://via.placeholder.com/100"
@@ -40,11 +40,11 @@ export default function Catalog() {
 
 function CatalogItem({ src, name }: { src: string; name: string }) {
   return (
-    <div className="flex flex-col w-full">
-      <div className="overflow-hidden rounded-2xl border-pallaslightred">
+    <div className="flex flex-col w-full h-full relative">
+      <div className="overflow-hidden h-full">
         <img src={src} alt="" className="w-full h-full object-cover" />
       </div>
-      <p className="text-center text-pallaslightred mt-4">{name}</p>
+      <p className="text-center text-pallaslightred mt-4 absolute">{name}</p>
     </div>
   );
 }
