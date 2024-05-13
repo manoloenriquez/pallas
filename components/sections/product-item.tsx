@@ -21,7 +21,7 @@ export default function ProductItem({
       onMouseLeave={unhovered}
     >
       <div className="relative w-full h-full transition-opacity">
-        <p className="text-3xl text-center text-white bg-pallasred border-b-2 border-black mt-0 py-4 justify-center whitespace-nowrap z-50">
+        <p className="text-3xl text-center text-white bg-pallasred border-b-2 border-black mt-0 py-4 justify-center whitespace-nowrap z-50 relative">
           {name}
         </p>
         <div
