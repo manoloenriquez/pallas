@@ -21,7 +21,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row max-w-screen-2xl mx-auto">
           <FadeInText className="p-4 lg:p-24 md:w-5/12">
             <h2 className="text-2xl">WHO WE ARE</h2>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl">
+            {/* <h2 className="text-4xl sm:text-5xl md:text-6xl">
               We are{" "}
               <span className={`text-pallaslightred`}>
                 designers & suppliers
@@ -29,15 +29,24 @@ export default function Home() {
             </h2>
             <h3 className="text-3xl">
               of true high-quality power distribution products
-            </h3>
+            </h3> */}
+            <br />
+            <p className="text-lg">
+              PALLAS ELECTRICAL™ is a world-class electrical design and
+              engineering company that is known for its innovative approach in
+              manufacturing premiere electrical equipment and tools catered for
+              all markets across the globe.
+            </p>
+            <br />
+            <p>Expertise. Execution.</p>
             <ul className="pl-10 list-disc my-8 text-lg">
-              <li>Fuse Cutouts</li>
-              <li>Lightning Arresters</li>
-              <li>Fuse Links</li>
-              <li>Insulators</li>
-              <li>Meters</li>
-              <li>Other Electrical</li>
-              <li>Products</li>
+              <li>Fuse Cut Out</li>
+              <li>Lightning Arrester</li>
+              <li>Fuse Link</li>
+              <li>Disconnect Switch</li>
+              <li>Insulator</li>
+              <li>Meter</li>
+              <li>Other Electrical Products</li>
             </ul>
             <Button asChild className="bg-pallasred">
               <Link href="/catalog">SEE CATALOGUE</Link>
@@ -75,10 +84,10 @@ export default function Home() {
       <section className="min-h-screen snap-start md:snap-center pt-24 flex flex-col">
         <FadeInText className="flex flex-col items-center max-w-screen-2xl mx-auto my-auto">
           <h2 className="font-bold text-2xl mt-10 mb-8">WHAT WE PROVIDE</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12 text-center">
             <div className="flex flex-col items-center">
               <Image
-                src="/outlet.png"
+                src="/home/[ICON] POWER AND UTILITY.png"
                 alt=""
                 width={200}
                 height={0}
@@ -86,16 +95,16 @@ export default function Home() {
                   height: "auto",
                 }}
               />
-              <h3 className="text-3xl my-8">Lighting & Controls</h3>
+              <h3 className="text-3xl my-8">Power & Utility</h3>
               <p className="mb-8">
-                indoor, outdoor, decorative, <br /> emergency, controls,
-                inverters
+                Outdoor transmission and distribution pole line hardware for
+                power utilities and other vital industries.
               </p>
             </div>
 
             <div className="flex flex-col items-center">
               <Image
-                src="/electric-pole.png"
+                src="/home/[ICON] DESIGN AND INNOVATION.png"
                 alt=""
                 width={200}
                 height={0}
@@ -103,16 +112,17 @@ export default function Home() {
                   height: "auto",
                 }}
               />
-              <h3 className="text-3xl my-8">Wiring & Electrical</h3>
+              <h3 className="text-3xl my-8">Design & Innovation</h3>
               <p className="mb-8">
-                indoor, outdoor, decorative, <br /> emergency, controls,
-                inverters
+                PALLAS ELECTRICAL™ is proud to have an in-house design team that
+                works with top engineers around the world to develop only the
+                best electrical products.
               </p>
             </div>
 
             <div className="flex flex-col items-center">
               <Image
-                src="/power-button.png"
+                src="/home/[ICON]-SERVICE-SOLUTIONS.png"
                 alt=""
                 width={200}
                 height={0}
@@ -120,10 +130,27 @@ export default function Home() {
                   height: "auto",
                 }}
               />
-              <h3 className="text-3xl my-8">Power & Utilities</h3>
+              <h3 className="text-3xl my-8">Service Solutions</h3>
               <p className="mb-8">
-                indoor, outdoor, decorative, <br /> emergency, controls,
-                inverters
+                Premiere customer service solutions through inbound and outbound
+                phone, chat, email, text, and after sales care with negotiable
+                warranties for all our products across the board.
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <Image
+                src="/home/[ICON] SAFETY EQUIPMENT AND ACCESSORIES.png"
+                alt=""
+                width={200}
+                height={0}
+                style={{
+                  height: "auto",
+                }}
+              />
+              <h3 className="text-3xl my-8">Safety Equipment & Accessories</h3>
+              <p className="mb-8">
+                Electrical safety equipment made to protect the modern
+                electrical linemen.
               </p>
             </div>
           </div>
