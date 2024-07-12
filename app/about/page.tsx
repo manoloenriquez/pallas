@@ -49,18 +49,22 @@ export default function About() {
         <div className="flex flex-col md:grid grid-cols-2 gap-12 mt-16">
           <FadeInText>
             <p>
-              <strong>Pallas Electrical</strong> is a designer and supplier of
-              true high-quality power distribution products such as Fuse
-              Cutouts, Lightning Arresters, Fuse Links, Insulators, Meters, and
-              other electrical products.
+              PALLAS ELECTRICAL™ is a world-class electrical design and
+              engineering company that leverages its design expertise and
+              delivers unmatched execution when addressing the world’s most
+              complicated electrical demands. With its commitment to innovation,
+              Pallas Electrical has established itself as a trusted name in
+              providing high-quality electrical solutions across the globe.
+              Designed in the US, our team works with some of the world’s best
+              engineers in providing solutions to modern day electrical
+              problems.
             </p>
             <br />
             <p>
-              Knowing that our product line-up is an indispensible component of
-              electrical grid , we make sure that it is backed by our confidence
-              in the strength of our expertise and outstanding customer support.{" "}
-              Pallas Electrical guarantees exceptional products that power homes
-              and business
+              PALLAS ELECTRICAL™ has also expanded manufacturing facilities and
+              partners in South America, India, and Asia to cater to
+              international customers looking for top quality electrical
+              products.
             </p>
           </FadeInText>
           <div className="relative min-h-[40rem] lg:hidden">
@@ -86,53 +90,48 @@ export default function About() {
           />
         </div>
       </section>
-      {/* <div className="bg-pallaslightred w-full h-[4px] mt-8"></div> */}
-      <section className="hidden text-pallaslightred text-justify pt-[86px] md:flex flex-col items-stretch justify-center min-h-screen snap-center max-w-screen-2xl mx-auto">
-        <div className="flex px-32">
-          <div className="relative min-h-96 w-5/12">
-            <Image
-              src="/about/scott-blake-x-ghf9LjrVg-unsplash.jpg"
-              alt=""
-              fill
-              style={{
-                objectFit: "cover",
-              }}
-            />
-          </div>
-
-          <div className="w-7/12 pl-16">
-            <AboutContent
-              title="Our Mission"
-              content="We are committed to creating a symphony of outstanding products,
-              operational excellence and exceptional customer service throught
-              its unwavering expertise and unparalleled execution. Everyday
-              Pallas Electrical will strive to contribute to the betterment of
-              the lives of its team and clients."
-            />
-          </div>
+      <section className="hidden md:block text-pallaslightred text-justify p-24 min-h-screen snap-center mx-auto pt-[86px] relative">
+        <div className="mt-12">
+          <Heading>Mission Statement</Heading>
         </div>
 
-        <div className="flex px-32 mt-12">
-          <div className="w-7/12 pr-16">
-            <AboutContent
-              title="Our Vision"
-              content="To be a trusted, respected, and preferred world-class provider of
-              reliable supplier of power distribution products."
-            />
-          </div>
-
-          <div className="relative min-h-96 w-5/12">
-            <Image
-              src="/about/emmanuel-ikwuegbu-_2AlIm-F6pw-unsplash.jpg"
-              alt=""
-              fill
-              style={{
-                objectFit: "cover",
-              }}
-            />
+        <div className="flex flex-col md:grid grid-cols-2 gap-12 mt-16">
+          <FadeInText>
+            <p>
+              At PALLAS ELECTRICAL™, we are dedicated to excellence in every
+              aspect of our work, from product design to customer service, to
+              ensure the utmost satisfaction of our clients worldwide. We aim to
+              empower individuals, organizations, societies to achieve their
+              goals while contributing to a more sustainable future through
+              design, innovation, and service. UNWAVERING EXPERTISE. UNMATCHED
+              EXECUTION.
+            </p>
+          </FadeInText>
+          <div className="absolute h-screen w-5/12 top-0 right-0 hidden lg:block">
+            <div className="relative h-[50%]">
+              <Image
+                src="/about/scott-blake-x-ghf9LjrVg-unsplash.jpg"
+                alt=""
+                fill
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <div className="relative h-[50%]">
+              <Image
+                src="/about/emmanuel-ikwuegbu-_2AlIm-F6pw-unsplash.jpg"
+                alt=""
+                fill
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
           </div>
         </div>
       </section>
+      {/* <div className="bg-pallaslightred w-full h-[4px] mt-8"></div> */}
       <section className="hidden text-pallaslightred text-justify pt-[86px] md:flex flex-col items-stretch justify-center min-h-screen snap-center max-w-screen-2xl mx-auto">
         <div className="flex px-32">
           <div className="relative min-h-96 w-5/12">
@@ -220,45 +219,41 @@ export default function About() {
           </div>
         </div>
       </section>
-      {/* <div className="bg-pallaslightred w-full h-[4px] mt-8"></div> */}
-      <section className="text-pallaslightred text-justify p-4 pt-[86px] md:hidden flex flex-col items-stretch justify-center min-h-screen snap-center max-w-screen-2xl mx-auto">
-        <div className="relative min-h-96">
-          <Image
-            src="/about/scott-blake-x-ghf9LjrVg-unsplash.jpg"
-            alt=""
-            fill
-            style={{
-              objectFit: "cover",
-            }}
-          />
-        </div>
+      <section className="text-pallaslightred text-justif md:hidden p-4 pt-[86px] h-screen snap-center max-w-screen-2xl mx-auto">
+        <Heading>About Us</Heading>
 
-        <AboutContent
-          title="Our Mission"
-          content="We are committed to creating a symphony of outstanding products,
-              operational excellence and exceptional customer service throught
-              its unwavering expertise and unparalleled execution. Everyday
-              Pallas Electrical will strive to contribute to the betterment of
-              the lives of its team and clients."
-        />
-      </section>
-      <section className="text-pallaslightred text-justify p-4 pt-[86px] md:hidden flex flex-col items-stretch justify-center min-h-screen snap-center max-w-screen-2xl mx-auto">
-        <div className="relative min-h-96">
-          <Image
-            src="/about/emmanuel-ikwuegbu-_2AlIm-F6pw-unsplash.jpg"
-            alt=""
-            fill
-            style={{
-              objectFit: "cover",
-            }}
-          />
-        </div>
+        <div className="flex flex-col md:grid grid-cols-2 gap-4">
+          <div>
+            <p>
+              <strong>Pallas Electrical</strong> is a designer and supplier of
+              true high-quality power distribution products such as Fuse
+              Cutouts, Lightning Arresters, Fuse Links, Insulators, Meters, and
+              other electrical products.
+            </p>
+            <br />
+            <p>
+              <strong>
+                Knowing that our product line-up is an indispensible component
+                of electrical grid
+              </strong>
+              , we make sure that it is backed by our confidence in the strength
+              of our expertise and outstanding customer support.{" "}
+              <strong>Pallas Electrical</strong> guarantees exceptional products
+              that power homes and business
+            </p>
+          </div>
 
-        <AboutContent
-          title="Our Vision"
-          content="To be a trusted, respected, and preferred world-class provider of
-              reliable supplier of power distribution products."
-        />
+          <div className="relative min-h-96">
+            <Image
+              src="/about/pexels-pixabay-159279.jpg"
+              alt=""
+              fill
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </div>
+        </div>
       </section>
       <section className="text-pallaslightred text-justify p-4 pt-[86px] md:hidden flex flex-col items-stretch justify-center min-h-screen snap-center max-w-screen-2xl mx-auto">
         <div className="relative min-h-96">
