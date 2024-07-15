@@ -82,7 +82,7 @@ export default function Home() {
       </section>
 
       <section className="min-h-screen snap-start md:snap-center pt-24 flex flex-col">
-        <FadeInText className="flex flex-col items-center max-w-screen-2xl mx-auto my-auto">
+        <FadeInText className="flex flex-col items-center max-w-screen-2xl mx-auto my-auto px-4">
           <h2 className="font-bold text-2xl mt-10 mb-8">WHAT WE PROVIDE</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12 text-center">
             <div className="flex flex-col items-center">
@@ -96,7 +96,7 @@ export default function Home() {
                 }}
               />
               <h3 className="text-3xl my-8">Power & Utility</h3>
-              <p className="mb-8">
+              <p className="mb-8 text-lg">
                 Outdoor transmission and distribution pole line hardware for
                 power utilities and other vital industries.
               </p>
@@ -113,7 +113,7 @@ export default function Home() {
                 }}
               />
               <h3 className="text-3xl my-8">Design & Innovation</h3>
-              <p className="mb-8">
+              <p className="mb-8 text-lg">
                 PALLAS ELECTRICAL™ is proud to have an in-house design team that
                 works with top engineers around the world to develop only the
                 best electrical products.
@@ -131,7 +131,7 @@ export default function Home() {
                 }}
               />
               <h3 className="text-3xl my-8">Service Solutions</h3>
-              <p className="mb-8">
+              <p className="mb-8 text-lg">
                 Premiere customer service solutions through inbound and outbound
                 phone, chat, email, text, and after sales care with negotiable
                 warranties for all our products across the board.
@@ -148,7 +148,7 @@ export default function Home() {
                 }}
               />
               <h3 className="text-3xl my-8">Safety Equipment & Accessories</h3>
-              <p className="mb-8">
+              <p className="mb-8 text-lg">
                 Electrical safety equipment made to protect the modern
                 electrical linemen.
               </p>
