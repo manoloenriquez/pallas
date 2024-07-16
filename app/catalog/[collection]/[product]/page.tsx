@@ -109,7 +109,7 @@ export default function Collection({
               {data.name}
             </h1>
             <p
-              className="text-justify"
+              className="text-justify text-lg"
               dangerouslySetInnerHTML={{ __html: data.description }}
             ></p>
             <Link href="/contact">
