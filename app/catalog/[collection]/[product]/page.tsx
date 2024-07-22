@@ -54,7 +54,7 @@ export default function Collection({
       // @ts-ignore
       productIdxMap[collection][product]
     ];
-
+  console.log(data);
   const [activeImg, setActiveImg] = useState(0);
 
   return (
@@ -65,28 +65,30 @@ export default function Collection({
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-screen-xl mx-auto">
           <div className="max-w-[530px] w-full">
-            <Dialog>
-              <DialogTrigger className="w-full">
-                <div className="relative w-full h-[530px] mx-auto">
-                  <Image
-                    src={data.images[activeImg]}
-                    alt=""
-                    fill
-                    style={{ objectFit: "contain" }}
-                  />
-                </div>
-              </DialogTrigger>
-              <DialogContent>
-                <div className="w-[530px] h-[530px]">
-                  <Image
-                    src={data.images[activeImg]}
-                    alt=""
-                    fill
-                    style={{ objectFit: "contain" }}
-                  />
-                </div>
-              </DialogContent>
-            </Dialog>
+            {activeImg < data.images.length && (
+              <Dialog>
+                <DialogTrigger className="w-full">
+                  <div className="relative w-full h-[530px] mx-auto">
+                    <Image
+                      src={data.images[activeImg]}
+                      alt=""
+                      fill
+                      style={{ objectFit: "contain" }}
+                    />
+                  </div>
+                </DialogTrigger>
+                <DialogContent>
+                  <div className="w-[530px] h-[530px]">
+                    <Image
+                      src={data.images[activeImg]}
+                      alt=""
+                      fill
+                      style={{ objectFit: "contain" }}
+                    />
+                  </div>
+                </DialogContent>
+              </Dialog>
+            )}
 
             <div className="grid grid-cols-3 mx-auto h-[132px] mt-4 w-fit">
               {data.images.map((image, idx) => (

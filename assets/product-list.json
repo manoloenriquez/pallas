@@ -34,15 +34,49 @@
     },
     {
       "name": "Disconnect Switch",
-      "cover": "",
-      "images": [],
+      "cover": "/products/Disconnect Switch/photo_2024-07-19 16.54.52.jpeg",
+      "images": [
+        "/products/Disconnect Switch/photo_2024-07-19 16.54.52.jpeg",
+        "/products/Disconnect Switch/photo_2024-07-19 16.54.53.jpeg"
+      ],
       "description": "<p >The <strong>PALLAS ELECTRICAL DISCONNECT SWITCH </strong>is applied to the power system with AC 50H with a rated voltage of 15kV. It is used to cut off and close single phase or three-phase circuits with no load and voltage. It is composed of the base, pillar insulator, conductive parts, and insurance hook. There is a cutting of and closing circuit by guillotine structure points switching. Each phase has a knife switch and the height of the spring can be adjusted to get the needed contact pressure. The insulation hook rod can be used to open and close the divide-shut brake. The knife switch itself has a self-locking device.</p><p><br></p><p >The Pallas Electrical&nbsp; Disconnect Switch is designed to provide isolation and switching performance in a variety of electrical power applications. It is an essential component in high-voltage power transmission and distribution systems where it is used to provide a means of disconnecting the power supply for maintenance or repair work.&nbsp;</p>",
       "href": "disconnect-switch"
     },
     {
       "name": "Insulators",
-      "cover": "/products/Insulators/COVER-Insulator 55-5 .webp",
-      "images": ["/products/Insulators/COVER-Insulator 55-5 .webp"],
+      "cover": "/products/Insulators/All items_ANSI Group_001.jpg",
+      "images": [
+        "/products/Insulators/All items_ANSI Group_001.jpg",
+        "/products/Insulators/All items_ANSI Group_002.jpg",
+        "/products/Insulators/ANSI 53-2_001.jpg",
+        "/products/Insulators/ANSI 53-2_002.jpg",
+        "/products/Insulators/ANSI 53-4 BROWN_001.jpg",
+        "/products/Insulators/ANSI 53-4 BROWN_002.jpg",
+        "/products/Insulators/ANSI 55 - 3,4,5_001.jpg",
+        "/products/Insulators/ANSI 55 - 3,4,5_002.jpg",
+        "/products/Insulators/ANSI 55-3_001.jpg",
+        "/products/Insulators/ANSI 55-3_002.jpg",
+        "/products/Insulators/ANSI 55-4 (2PCS)_001.jpg",
+        "/products/Insulators/ANSI 55-4 (2PCS)_002.jpg",
+        "/products/Insulators/ANSI 55-4 BROWN_001.jpg",
+        "/products/Insulators/ANSI 55-4 BROWN_002.jpg",
+        "/products/Insulators/ANSI 55-4_001.jpg",
+        "/products/Insulators/ANSI 55-4_002.jpg",
+        "/products/Insulators/ANSI 55-5 (2PCS)_001.jpg",
+        "/products/Insulators/ANSI 55-5 (2PCS)_002.jpg",
+        "/products/Insulators/ANSI 55-5 BROWN_001.jpg",
+        "/products/Insulators/ANSI 55-5 BROWN_002.jpg",
+        "/products/Insulators/ANSI 55-5_001.jpg",
+        "/products/Insulators/ANSI 55-5_002.jpg",
+        "/products/Insulators/ANSI 56-1 & 2 (2PCS)_001.jpg",
+        "/products/Insulators/ANSI 56-1 & 2 (2PCS)_002.jpg",
+        "/products/Insulators/ANSI 56-1_001.jpg",
+        "/products/Insulators/ANSI 56-1_002.jpg",
+        "/products/Insulators/ANSI 56-2_001.jpg",
+        "/products/Insulators/ANSI 56-2_002.jpg",
+        "/products/Insulators/HDPE 55-5_001.jpg",
+        "/products/Insulators/HDPE 55-5_002.jpg"
+      ],
       "description": "<p ><strong>PALLAS PIN TYPE INSULATORS </strong>are designed for use in medium voltage distribution and overhead lines.&nbsp; These are made to withstand harsh weather conditions and exposure to chemicals that may be present in industrial zones. The Pallas Electrical Porcelain Pin Type Insulator is also made to last in thermal, dynamic, and electrical stresses caused by common short circuits, and other operating hazards. These Pallas Insulators are specifically designed to comply with ANSI Class (C29.6) standards, ensuring the performance of both the electrical and mechanical functions, as well as to satisfy all dimensional specifications and applicable requirements.&nbsp;</p><p><br></p><p >Available ANSI Class Insulators:</p><p><br></p><p >ANSI 56-1 Pin Insulator with Gray Color</p><p >ANSI 56-2 Pin Insulator with Gray Color&nbsp;</p><p >ANSI 55-3 Pin Insulator with Gray Color</p><p >ANSI 55-4 Pin Insulator with Gray Color</p><p >ANSI 55-5 Pin Insulator with Gray Color</p><p >ANSI 55-5 Pin Insulator HDPE, 15kV</p><p><br></p><p ><strong>Pallas Electrical Spool Type Insulators </strong>are used together with spool bolt, clevises, and secondary racks for dead-ending or to insulate and support primary neutral and secondary (bare or covered) conductors at the pole or house using various clevis mounting variations to maximize its effectiveness. Pallas Electrical Spool insulators are manufactured to meet ANSI Specification C29.5 and ANSI C29.3</p><p><br></p><p >Available ANSI Class Insulators:</p><p><br></p><p >ANSI 53-2 Porcelain Spool Insulator Brown Color</p><p >ANSI 53-4 Spool Insulator Brown Color</p>",
       "href": "insulator"
     },
@@ -60,21 +94,21 @@
       "cover": "",
       "images": [],
       "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
-      "href": "lightning-arresters"
+      "href": "69kv"
     },
     {
       "name": "110KV Transmission Products",
       "cover": "",
       "images": [],
       "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
-      "href": "lightning-arresters"
+      "href": "110kv"
     },
     {
       "name": "250KV Transmission Products",
       "cover": "",
       "images": [],
       "description": "Lightning Arrester protects electrical equipment in cases of voltage surges caused by factors like lightning striking overhead power lines, induction lightning in the area of the overhead power lines, switch-on and switch-off operations on the feeder circuit, or a fault in the distribution circuit. With Lightning Arresters, equipment of utility companies and end users are kept from any serious damage.",
-      "href": "lightning-arresters"
+      "href": "250kv"
     }
   ]
 }
