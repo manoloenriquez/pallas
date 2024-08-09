@@ -98,15 +98,15 @@
     },
     {
       "name": "110 kV Transmission Products",
-      "cover": "/products/110KV/110.jpeg",
-      "images": ["/products/110KV/110.jpeg"],
+      "cover": "/products/110KV/110.png",
+      "images": ["/products/110KV/110.png"],
       "description": "<p ><strong>Pallas Electrical </strong>also offers Transmission Line Products catered towards various requirements. We provide and have access to a network of contractors and firms that carry out the construction works, the supply and installation of cable equipment for 110kV lines such as: 110 kV cable, 110 kV cable terminations for external installation, 110 kV surge arresters.</p>",
       "href": "110kv"
     },
     {
       "name": "250 kV Transmission Products",
-      "cover": "/products/250KV/250.jpeg",
-      "images": ["/products/250KV/250.jpeg"],
+      "cover": "/products/250KV/250.png",
+      "images": ["/products/250KV/250.png"],
       "description": "<p >In line with our mission to provide the best products in the industry, <strong>Pallas Electrical</strong> has designed a line for components that cater to High-Voltage and Low-Voltage Switch gears, composite suspension insulators,&nbsp; transformers, Scada, civil &amp; mechanical works, High Voltage and Low Voltage metering</p>",
       "href": "250kv"
     }
