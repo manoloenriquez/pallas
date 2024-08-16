@@ -1,7 +1,7 @@
 {
   "distribution": [
     {
-      "name": "Fuse Cutout",
+      "name": "Fuse Cutouts",
       "cover": "/products/Fuse Cutout Series/C-FCO.png",
       "images": ["/products/Fuse Cutout Series/C-FCO.png"],
       "description": "<p>Drop-out Fuse Cut Out and load switch Fuse Cut Out are outdoor high voltage protective devices, tube connected with incoming feeder of distribution transformer or distribution lines, it mainly protects transformers or lines from short circuits and overloading current.&nbsp;</p><p><br></p><p >It is composed of an insulated insulator support and a fuse tube, static contacts are affixed on two sides of the insulator support and the moving contact is installed on two ends of the fuse tubes. The Fuse tube is composed of an inside arc-extinguishing tube. The Outer phenolic compound paper tube or epoxy glass tube, load switching Fuse Cutout provides enforced elastic auxiliary contacts and arc-extinguishing enclosure switching on-off loading current. All Fuse Cutouts comply according to ANSI Standards.</p>",
@@ -19,21 +19,21 @@
       "href": "lightning-arresters"
     },
     {
-      "name": "Fuse Link",
+      "name": "Fuse Links",
       "cover": "/products/Pallas Electrical Fuse Links/C-FL.png",
       "images": ["/products/Pallas Electrical Fuse Links/C-FL.png"],
       "description": "<p ><strong>ACCURATE TIME-CURRENT CHARACTERISTICS</strong></p><p >The fuse element adopts the accurately tested material, high purity silver, or silver-copper eutectic or nickel chrome eutectic, based on different rated current. The fuse element wire is extruded by a mold of high accuracy. The cross section is inspected by laser micrometer to ensure the accuracy, while careful assembly guarantees no crack, shrinkage or twist which affects the time-current accuracy.</p><p><br></p><p ><strong>DURABILITY</strong></p><p >Swaged connected end and high strength strain wire make the fuse link not affected by aging, vibration, or high current impulse which may heat the fuse element nearly to the severing point. When the fuse link in the 1st phase or 2nd phase operates in a three phase circuit, only the melted fuse link needs to be replaced, there will be no need to replace all the fuse links in the circuit.</p><p><br></p><p ><strong>GOOD FAULT INTERRUPTING CAPABILITY</strong></p><p >Can reliably interrupt the inside fault at the first and secondary side of transformer, short-circuit fault of bushing at secondary side of transformer bushing, and short-circuit fault between transformer bushing at transformer secondary side and air switch, so as to protect transformer effectively.</p>",
       "href": "fuse-link"
     },
     {
-      "name": "Meter Base",
+      "name": "Meter Bases",
       "cover": "/products/Meter Mounting Equipment/C-MB.png",
       "images": ["/products/Meter Mounting Equipment/C-MB.png"],
       "description": "PALLAS Electrical meter sockets can be installed in homes with light load current requirements of 100 amps, up to the demanding requirements of the large load currents, requiring a single 320-amp meter socket or multiple meter sockets feeding multiple service panels.",
       "href": "meter-base"
     },
     {
-      "name": "Disconnect Switch",
+      "name": "Disconnect Switches",
       "cover": "/products/Disconnect Switch/photo_2024-07-19 16.54.52.jpeg",
       "images": [
         "/products/Disconnect Switch/photo_2024-07-19 16.54.52.jpeg",
@@ -81,7 +81,7 @@
       "href": "insulator"
     },
     {
-      "name": "Fuse Tube",
+      "name": "Fuse Tubes",
       "cover": "/products/Fuse Cutout Series/COVER-FUSE TUBE.png",
       "images": ["/products/Fuse Cutout Series/COVER-FUSE TUBE.png"],
       "description": "<p ><strong>PALLAS ELECTRICAL FUSE TUBES (PEFT) </strong>top of the line Fuse Holders compatible with all our Pallas Electrical Fuse cutouts, these are used in supporting the protection of&nbsp; the distribution line from over current and short-circuit. PEFTs are made of epoxy glass fiber lined with uv resistant coating and copper arc-extinguishing material, the fuse tube does not absorb moisture or deform. PEFTs are designed to accommodate the standard expulsion fuse link Type K or Type T. Moreover, with strong <strong>UV </strong>resistance, thick arc-extinguishing layer and good arc-extinguishing performance, it has a long service life. In addition, the upper part of the fuse tube can prevent water intrusion, so as to ensure no water in the fuse tube. Our PEFTs can also be ordered with <strong>Arc-shortening rods</strong>, upon request.</p><p >&nbsp;</p><p >The fuse carrier adopts single exhaust (downward) with a solid cap to avoid the threat of free gas to the circuit, unnecessary mechanical damage or short circuit. At the same time, the performance of short-circuit current and interruption of the fuse can be greatly improved.</p><p><br></p><p >Available:</p><p><br></p><p >Pallas Electrical Fuse Tube 100A</p><p >Pallas Electrical Fuse Tube 200A</p>",
@@ -93,7 +93,7 @@
       "name": "69 kV Transmission Products",
       "cover": "/products/69KV/69.png",
       "images": ["/products/69KV/69.png"],
-      "description": "<p >For higher voltage requirements, <strong>Pallas Electrical </strong>offers the following products for <strong>69kV </strong>and above:&nbsp;</p><p><br></p><p >For Substation Requirements: High-Voltage and Low-Voltage Switch gears, transformers, Scada, civil &amp; mechanical works, High Voltage and Low Voltage metering.</p><p><br></p><p >For Low Voltage Distribution Line Requirements: Line accessories, High-Voltage Outdoor Switches, disconnects and isolators.</p>",
+      "description": "<p>For higher voltage requirements, Pallas Electrical offers the following products for 69kV and above:&nbsp;</p><p><br></p><p>For substation requirements: high-voltage and low-voltage switch gears, transformers, scada, civil &amp; mechanical works, high-voltage and low-voltage metering.</p><p><br></p><p>For low-voltage distribution line requirements: line accessories, high-voltage outdoor switches, disconnect switches, and isolators.</p>",
       "href": "69kv"
     },
     {
@@ -107,7 +107,7 @@
       "name": "250 kV Transmission Products",
       "cover": "/products/250KV/250.png",
       "images": ["/products/250KV/250.png"],
-      "description": "<p >In line with our mission to provide the best products in the industry, <strong>Pallas Electrical</strong> has designed a line for components that cater to High-Voltage and Low-Voltage Switch gears, composite suspension insulators,&nbsp; transformers, Scada, civil &amp; mechanical works, High Voltage and Low Voltage metering</p>",
+      "description": "<p>In line with our mission to provide the best products in the industry, Pallas Electrical has designed a line for components that cater to high-voltage and low-voltage switch gears, composite suspension insulators,&nbsp;transformers, scada, civil &amp; mechanical works, high-voltage and low-voltage metering.</p>",
       "href": "250kv"
     }
   ]

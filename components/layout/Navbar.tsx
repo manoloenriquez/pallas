@@ -31,8 +31,8 @@ const links: LinkType[] = [
     href: "/about",
   },
   {
-    label: "Catalog",
-    href: "/catalog",
+    label: "Catalogue",
+    href: "/catalogue",
   },
   {
     label: "Contact",

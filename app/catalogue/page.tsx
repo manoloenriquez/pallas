@@ -36,10 +36,7 @@ export default function Catalog() {
         </FadeInText>
       </section>
 
-      <section
-        id="collection"
-        className="pt-[86px] min-h-screen h-full snap-center"
-      >
+      <section id="collection" className="min-h-screen h-full snap-center">
         <FadeInText className="grid grid-cols-1 md:grid-cols-2 h-full w-full mx-auto gap-1">
           {/* {[...Array(2)].map((_, idx) => (
             <CatalogItem
@@ -49,7 +46,7 @@ export default function Catalog() {
           ))} */}
 
           {catalogItems.map(({ src, name, href }) => (
-            <Link key={href} href={`/catalog/${href}`}>
+            <Link key={href} href={`/catalogue/${href}`}>
               <CatalogItem src={src} name={name} />
             </Link>
           ))}

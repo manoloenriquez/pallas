@@ -48,7 +48,7 @@ export default function Collection({
           {products.map((product, idx) => (
             <Link
               key={product.href}
-              href={`/catalog/${collection}/${product.href}`}
+              href={`/catalogue/${collection}/${product.href}`}
               className="flex-1 overflow-hidden h-full min-h-[200px]"
             >
               <ProductItem
