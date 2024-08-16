@@ -9,8 +9,11 @@ export default function Footer() {
           <Link href="/about" className="transition-opacity hover:opacity-70">
             ABOUT
           </Link>
-          <Link href="/catalog" className="transition-opacity hover:opacity-70">
-            CATALOG
+          <Link
+            href="/catalogue"
+            className="transition-opacity hover:opacity-70"
+          >
+            CATALOGUE
           </Link>
           <Link href="/contact" className="transition-opacity hover:opacity-70">
             CONTACT US
