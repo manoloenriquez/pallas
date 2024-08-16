@@ -40,7 +40,7 @@ export default function Home() {
             <br />
             <p>Expertise. Execution.</p>
             <ul className="pl-10 list-disc my-8 text-lg">
-              <li>Fuse Cut Out</li>
+              <li>Fuse Cutout</li>
               <li>Lightning Arrester</li>
               <li>Fuse Link</li>
               <li>Disconnect Switch</li>
