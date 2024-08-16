@@ -14,6 +14,8 @@ import {
 } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 
+import { GiHamburgerMenu } from "react-icons/gi";
+
 type LinkType = {
   label: string;
   href: string;
@@ -104,9 +106,11 @@ export default function Navbar() {
           <div className="flex justify-between items-center">
             <div className="flex-1">
               <Button className="bg-pallasred" asChild>
-                <SheetTrigger>X</SheetTrigger>
+                <SheetTrigger>
+                  <GiHamburgerMenu />
+                </SheetTrigger>
               </Button>
-              <SheetContent>
+              <SheetContent side={"left"}>
                 <div className="flex flex-col gap-4">
                   {links.map((link) => (
                     <Link

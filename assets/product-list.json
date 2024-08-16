@@ -77,7 +77,7 @@
         "/products/Insulators/HDPE 55-5_001.jpg",
         "/products/Insulators/HDPE 55-5_002.jpg"
       ],
-      "description": "<p ><strong>PALLAS PIN TYPE INSULATORS </strong>are designed for use in medium voltage distribution and overhead lines.&nbsp; These are made to withstand harsh weather conditions and exposure to chemicals that may be present in industrial zones. The Pallas Electrical Porcelain Pin Type Insulator is also made to last in thermal, dynamic, and electrical stresses caused by common short circuits, and other operating hazards. These Pallas Insulators are specifically designed to comply with ANSI Class (C29.6) standards, ensuring the performance of both the electrical and mechanical functions, as well as to satisfy all dimensional specifications and applicable requirements.&nbsp;</p><p><br></p><p >Available ANSI Class Insulators:</p><p><br></p><p >ANSI 56-1 Pin Insulator with Gray Color</p><p >ANSI 56-2 Pin Insulator with Gray Color&nbsp;</p><p >ANSI 55-3 Pin Insulator with Gray Color</p><p >ANSI 55-4 Pin Insulator with Gray Color</p><p >ANSI 55-5 Pin Insulator with Gray Color</p><p >ANSI 55-5 Pin Insulator HDPE, 15kV</p><p><br></p><p ><strong>Pallas Electrical Spool Type Insulators </strong>are used together with spool bolt, clevises, and secondary racks for dead-ending or to insulate and support primary neutral and secondary (bare or covered) conductors at the pole or house using various clevis mounting variations to maximize its effectiveness. Pallas Electrical Spool insulators are manufactured to meet ANSI Specification C29.5 and ANSI C29.3</p><p><br></p><p >Available ANSI Class Insulators:</p><p><br></p><p >ANSI 53-2 Porcelain Spool Insulator Brown Color</p><p >ANSI 53-4 Spool Insulator Brown Color</p>",
+      "description": "<p >PALLAS Electrical Pin Type Insulators are designed for use in medium voltage distribution and overhead lines.&nbsp; These are made to withstand harsh weather conditions and exposure to chemicals that may be present in industrial zones. The Pallas Electrical Porcelain Pin Type Insulator is also made to last in thermal, dynamic, and electrical stresses caused by common short circuits, and other operating hazards. These Pallas Insulators are specifically designed to comply with ANSI Class (C29.6) standards, ensuring the performance of both the electrical and mechanical functions, as well as to satisfy all dimensional specifications and applicable requirements.&nbsp;</p><p><br></p><p >Available ANSI Class Pin Type Insulators:</p><p >ANSI 56-1 Pin Insulator with Gray Color</p><p >ANSI 56-2 Pin Insulator with Gray Color&nbsp;</p><p >ANSI 55-3 Pin Insulator with Gray Color</p><p >ANSI 55-4 Pin Insulator with Gray Color</p><p >ANSI 55-5 Pin Insulator with Gray Color</p><p >ANSI 55-5 Pin Insulator HDPE, 15kV</p><p><br></p><p >PALLAS Electrical Spool Type Insulators are used together with spool bolt, clevises, and secondary racks for dead-ending or to insulate and support primary neutral and secondary (bare or covered) conductors at the pole or house using various clevis mounting variations to maximize its effectiveness. Pallas Electrical Spool insulators are manufactured to meet ANSI Specification C29.5 and ANSI C29.3</p><p><br></p><p >Available ANSI Class Spool Type Insulators:</p><p><br></p><p >ANSI 53-2 Porcelain Spool Insulator Brown Color</p><p >ANSI 53-4 Spool Insulator Brown Color</p>",
       "href": "insulator"
     },
     {
@@ -97,11 +97,11 @@
       "href": "69kv"
     },
     {
-      "name": "110 kV Transmission Products",
-      "cover": "/products/110KV/110.png",
-      "images": ["/products/110KV/110.png"],
-      "description": "<p ><strong>Pallas Electrical </strong>also offers Transmission Line Products catered towards various requirements. We provide and have access to a network of contractors and firms that carry out the construction works, the supply and installation of cable equipment for 110kV lines such as: 110 kV cable, 110 kV cable terminations for external installation, 110 kV surge arresters.</p>",
-      "href": "110kv"
+      "name": "138 kV Transmission Products",
+      "cover": "/products/138KV/110.png",
+      "images": ["/products/138KV/110.png"],
+      "description": "<p ><strong>Pallas Electrical </strong>also offers Transmission Line Products catered towards various requirements. We provide and have access to a network of contractors and firms that carry out the construction works, the supply and installation of cable equipment for 138 kV lines such as: 138 kV cable, 138 kV cable terminations for external installation, 138 kV surge arresters.</p>",
+      "href": "138kv"
     },
     {
       "name": "250 kV Transmission Products",

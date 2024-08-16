@@ -60,7 +60,7 @@ export default function Collection({
     },
     transmission: {
       "69kv": 0,
-      "110kv": 1,
+      "138kv": 1,
       "250kv": 2,
     },
   };
@@ -122,33 +122,35 @@ export default function Collection({
               ))}
             </div> */}
 
-            <Carousel>
-              <CarouselContent>
-                {splitImages.map((imgGroup, grpIdx) => (
-                  <CarouselItem key={grpIdx}>
-                    <div className="grid grid-cols-3 mx-auto h-[132px] mt-4 w-fit gap-4">
-                      {imgGroup.map((image, idx) => (
-                        <div
-                          className="relative w-[132px] h-[132px] cursor-pointer"
-                          onClick={() =>
-                            setActiveImg(idx + grpIdx * imgGroup.length)
-                          }
-                        >
-                          <Image
-                            src={image}
-                            alt=""
-                            fill
-                            style={{ objectFit: "cover" }}
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
+            {splitImages.length > 1 && (
+              <Carousel>
+                <CarouselContent>
+                  {splitImages.map((imgGroup, grpIdx) => (
+                    <CarouselItem key={grpIdx}>
+                      <div className="grid grid-cols-3 mx-auto h-[132px] mt-4 w-fit gap-4">
+                        {imgGroup.map((image, idx) => (
+                          <div
+                            className="relative w-[132px] h-[132px] cursor-pointer"
+                            onClick={() =>
+                              setActiveImg(idx + grpIdx * imgGroup.length)
+                            }
+                          >
+                            <Image
+                              src={image}
+                              alt=""
+                              fill
+                              style={{ objectFit: "cover" }}
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            )}
           </div>
           <FadeInText className="mt-12">
             <h1 className="text-4xl font-bold text-pallasred mb-8">

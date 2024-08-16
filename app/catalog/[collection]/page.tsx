@@ -51,10 +51,18 @@ export default function Collection({
               href={`/catalog/${collection}/${product.href}`}
               className="flex-1 overflow-hidden h-full min-h-[200px]"
             >
-              <ProductItem src={product.cover} name={product.name} />
+              <ProductItem
+                src={product.cover}
+                name={product.name}
+                collection={collection}
+              />
             </Link>
           ))}
-          <div className="border border-pallasred bg-pallasred grid place-items-center">
+          <div
+            className={`border border-pallasred bg-pallasred grid place-items-center ${
+              products.length % 3 === 0 ? "md:col-span-3" : ""
+            }`}
+          >
             {/* <Link href="/contact">
               <Button className="bg-pallasred mt-12">
                 Request Quote / Technical Data Sheet

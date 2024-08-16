@@ -69,7 +69,7 @@ export default function ContactForm() {
     <div className="grid grid-cols-1 md:grid-cols-2">
       <div className="grid place-items-center">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47171.878470417345!2d-71.055129!3d42.358673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37151e2379bb3%3A0xa9ef3ffe663978b6!2s75%20State%20St%2C%20Boston%2C%20MA%2002109!5e0!3m2!1sen!2sus!4v1715573120521!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.4159934432423!2d-75.53139508726714!3d39.75276749566226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6fd32f02dfad1%3A0xe6f2b1c677ee067e!2s2810%20N%20Church%20St%2C%20Wilmington%2C%20DE%2019802%2C%20USA!5e0!3m2!1sen!2sph!4v1723793241820!5m2!1sen!2sph"
           width="600"
           height="450"
           className="max-w-full"
@@ -174,10 +174,10 @@ const ProductSelect = ({
     "Fuse Link",
     "Meter Base",
     "Disconnect Switch",
-    "Insulator (Pin & Spool)",
+    "Insulators",
     "Fuse Tube",
     "69KV Transmission Products",
-    "110KV Transmission Products",
+    "138KV Transmission Products",
     "250KV Transmission Products",
   ];
 

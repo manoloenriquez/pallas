@@ -19,7 +19,7 @@ export default function Contact() {
             </div>
             <h2 className="font-bold text-pallasred md:my-4">CALL US</h2>
             <p className="text-[.8rem] sm:text-xs md:text-sm text-center">
-              +1 6176557200
+              +1 3022088298
             </p>
           </div>
 
@@ -49,8 +49,7 @@ export default function Contact() {
             </div>
             <h2 className="font-bold text-pallasred md:my-4">CALL US</h2>
             <p className="text-xs md:text-sm text-center">
-              75 State Street, Boston, Massachusetts, 02109, United States of
-              America
+              2810 N Church St PMB 203909 Wilmington, DE 19802-4447 US
             </p>
           </div>
         </div>

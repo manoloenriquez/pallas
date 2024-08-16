@@ -5,9 +5,11 @@ import { useState } from "react";
 export default function ProductItem({
   src,
   name,
+  collection,
 }: {
   src: string;
   name: string;
+  collection: string;
 }) {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
@@ -37,7 +39,7 @@ export default function ProductItem({
           className={`overflow-hidden h-full transition-all`}
           style={{
             backgroundImage: `url('${src}')`,
-            backgroundSize: "contain",
+            backgroundSize: collection === "transmission" ? "cover" : "contain",
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
           }}
