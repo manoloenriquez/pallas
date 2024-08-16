@@ -67,7 +67,7 @@ export default function About() {
               products.
             </p>
           </FadeInText>
-          <div className="relative min-h-[40rem]">
+          <div className="relative min-h-[40rem] lg:hidden">
             <Image
               src="/about/pexels-pixabay-159279.jpg"
               alt=""
@@ -79,7 +79,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="absolute w-5/12 top-0 right-0 hidden lg:block">
+        <div className="absolute w-5/12 top-0 right-0 hidden lg:block lg:h-screen">
           <Image
             src="/about/pexels-pixabay-159279.jpg"
             alt=""
