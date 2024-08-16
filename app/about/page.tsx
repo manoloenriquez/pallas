@@ -67,7 +67,7 @@ export default function About() {
               products.
             </p>
           </FadeInText>
-          <div className="relative min-h-[40rem] lg:hidden">
+          <div className="relative min-h-[40rem]">
             <Image
               src="/about/pexels-pixabay-159279.jpg"
               alt=""
@@ -79,7 +79,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="absolute h-screen w-5/12 top-0 right-0 hidden lg:block">
+        <div className="absolute w-5/12 top-0 right-0 hidden lg:block">
           <Image
             src="/about/pexels-pixabay-159279.jpg"
             alt=""
@@ -107,7 +107,7 @@ export default function About() {
               EXECUTION.
             </p>
           </FadeInText>
-          <div className="absolute h-screen w-5/12 top-0 right-0 hidden lg:block">
+          <div className="absolute w-5/12 top-0 right-0 hidden lg:block h-full">
             <div className="relative h-[50%]">
               <Image
                 src="/about/scott-blake-x-ghf9LjrVg-unsplash.jpg"
@@ -183,7 +183,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="text-pallaslightred text-justif md:hidden p-4 pt-[86px] h-screen snap-center max-w-screen-2xl mx-auto">
+      <section className="text-pallaslightred text-justif md:hidden p-4 mt-[86px] snap-center max-w-screen-2xl mx-auto">
         <Heading>About Us</Heading>
 
         <div className="flex flex-col md:grid grid-cols-2 gap-4">
@@ -219,44 +219,38 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="text-pallaslightred text-justif md:hidden p-4 pt-[86px] h-screen snap-center max-w-screen-2xl mx-auto">
-        <Heading>About Us</Heading>
+      <section className="text-pallaslightred text-justif md:hidden p-4 snap-center max-w-screen-2xl mx-auto">
+        <Heading>Mission Statement</Heading>
 
         <div className="flex flex-col md:grid grid-cols-2 gap-4">
           <div>
             <p>
-              <strong>Pallas Electrical</strong> is a designer and supplier of
-              true high-quality power distribution products such as Fuse
-              Cutouts, Lightning Arresters, Fuse Links, Insulators, Meters, and
-              other electrical products.
-            </p>
-            <br />
-            <p>
-              <strong>
-                Knowing that our product line-up is an indispensible component
-                of electrical grid
-              </strong>
-              , we make sure that it is backed by our confidence in the strength
-              of our expertise and outstanding customer support.{" "}
-              <strong>Pallas Electrical</strong> guarantees exceptional products
-              that power homes and business
+              At PALLAS ELECTRICAL™, we are dedicated to excellence in every
+              aspect of our work, from product design to customer service, to
+              ensure the utmost satisfaction of our clients worldwide. We aim to
+              empower individuals, organizations, societies to achieve their
+              goals while contributing to a more sustainable future through
+              design, innovation, and service. UNWAVERING EXPERTISE. UNMATCHED
+              EXECUTION.
             </p>
           </div>
 
-          <div className="relative min-h-96">
-            <Image
-              src="/about/pexels-pixabay-159279.jpg"
-              alt=""
-              fill
-              style={{
-                objectFit: "cover",
-              }}
-            />
+          <div>
+            <div className="relative min-h-96">
+              <Image
+                src="/about/scott-blake-x-ghf9LjrVg-unsplash.jpg"
+                alt=""
+                fill
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </div>
           </div>
         </div>
       </section>
-      <section className="text-pallaslightred text-justify p-4 pt-[86px] md:hidden flex flex-col items-stretch justify-center min-h-screen snap-center max-w-screen-2xl mx-auto">
-        <div className="relative min-h-96">
+      <section className="text-pallaslightred text-justify p-4 md:hidden flex flex-col items-stretch justify-center min-h-screen snap-center max-w-screen-2xl mx-auto">
+        <div className="relative min-h-96 my-6">
           <Image
             src="/about/thisisengineering-raeng-FXgbqr-t7uw-unsplash.jpg"
             alt=""
@@ -279,8 +273,8 @@ export default function About() {
               over 15 years."
         />
       </section>
-      <section className="text-pallaslightred text-justify p-4 pt-[86px] md:hidden flex flex-col items-stretch justify-center min-h-screen snap-center max-w-screen-2xl mx-auto">
-        <div className="relative min-h-96">
+      <section className="text-pallaslightred text-justify p-4 md:hidden flex flex-col items-stretch justify-center min-h-screen snap-center max-w-screen-2xl mx-auto">
+        <div className="relative min-h-96 my-4">
           <Image
             src="/about/pexels-pixabay-236089.jpg"
             alt=""

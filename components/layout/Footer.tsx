@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-pallasred text-white p-4 md:py-12 md:px-8">
+    <footer className="bg-pallasred text-white p-4 pb-12 md:py-12 md:px-8">
       <div className="flex relative">
         <div className="flex flex-col w-9/12 text-[1rem]">
           <Link href="/about" className="transition-opacity hover:opacity-70">
