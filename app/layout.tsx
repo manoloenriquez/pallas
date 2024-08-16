@@ -21,6 +21,19 @@ export const metadata: Metadata = {
   title: "Pallas Electrical",
   description:
     "PALLAS ELECTRICAL™ is a world-class electrical design and engineering company that is known for its innovative approach in manufacturing premiere electrical equipment and tools catered for all markets across the globe.",
+  openGraph: {
+    type: "website",
+    title: "Pallas Electrical",
+    description:
+      "PALLAS ELECTRICAL™ is a world-class electrical design and engineering company that is known for its innovative approach in manufacturing premiere electrical equipment and tools catered for all markets across the globe.",
+    images: "/Pallas-Logo_Logo With Name.png",
+  },
+  twitter: {
+    title: "Pallas Electrical",
+    description:
+      "PALLAS ELECTRICAL™ is a world-class electrical design and engineering company that is known for its innovative approach in manufacturing premiere electrical equipment and tools catered for all markets across the globe.",
+    images: "/Pallas-Logo_Logo With Name.png",
+  },
 };
 
 export default function RootLayout({
