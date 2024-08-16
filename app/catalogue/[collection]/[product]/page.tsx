@@ -22,6 +22,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import FadeInView from "@/components/fadeinview";
 
 const catalogItems = [
   {
@@ -152,7 +153,7 @@ export default function Collection({
               </Carousel>
             )}
           </div>
-          <FadeInText className="mt-12">
+          <FadeInView className="mt-12">
             <h1 className="text-4xl font-bold text-pallasred mb-8">
               {data.name}
             </h1>
@@ -165,7 +166,7 @@ export default function Collection({
                 Request Quote / Technical Data Sheet
               </Button>
             </Link>
-          </FadeInText>
+          </FadeInView>
         </div>
       </section>
     </>

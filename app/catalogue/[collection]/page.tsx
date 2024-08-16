@@ -6,6 +6,7 @@ import { useParams } from "next/navigation";
 import productList from "@/assets/product-list.json";
 import Link from "next/link";
 import ProductItem from "@/components/sections/product-item";
+import FadeInView from "@/components/fadeinview";
 
 const catalogItems = [
   {
@@ -40,7 +41,7 @@ export default function Collection({
   return (
     <>
       <section id="collection" className="pt-[86px] min-h-screen md:h-full">
-        <FadeInText
+        <FadeInView
           className={`grid grid-cols-2 md:grid ${
             columns[collection as keyof typeof columns]
           } h-full w-full mx-auto`}
@@ -72,7 +73,7 @@ export default function Collection({
               <Image src="/WhitePallas.png" alt="" width={300} height={100} />
             </Link>
           </div>
-        </FadeInText>
+        </FadeInView>
       </section>
     </>
   );

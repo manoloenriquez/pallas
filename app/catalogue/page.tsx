@@ -1,4 +1,5 @@
 import FadeInText from "@/components/fadeintext";
+import FadeInView from "@/components/fadeinview";
 import CatalogItem from "@/components/sections/catalog-item";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -37,7 +38,7 @@ export default function Catalog() {
       </section>
 
       <section id="collection" className="min-h-screen h-full snap-center">
-        <FadeInText className="grid grid-cols-1 md:grid-cols-2 h-full w-full mx-auto gap-1">
+        <FadeInView className="grid grid-cols-1 md:grid-cols-2 h-full w-full mx-auto gap-1">
           {/* {[...Array(2)].map((_, idx) => (
             <CatalogItem
               src="https://via.placeholder.com/100"
@@ -50,7 +51,7 @@ export default function Catalog() {
               <CatalogItem src={src} name={name} />
             </Link>
           ))}
-        </FadeInText>
+        </FadeInView>
       </section>
     </>
   );

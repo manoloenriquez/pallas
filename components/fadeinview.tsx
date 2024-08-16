@@ -8,7 +8,7 @@ interface Props extends PropsWithChildren {
   className?: string;
 }
 
-const FadeInText = ({ children, className }: Props) => {
+const FadeInView = ({ children, className }: Props) => {
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger animation only once
     threshold: 0.01, // Trigger when 50% of the element is in view
@@ -27,4 +27,4 @@ const FadeInText = ({ children, className }: Props) => {
   );
 };
 
-export default FadeInText;
+export default FadeInView;
