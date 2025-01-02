@@ -47,9 +47,9 @@ export default function Contact() {
                 style={{ objectFit: "contain" }}
               />
             </div>
-            <h2 className="font-bold text-pallasred md:my-4">CALL US</h2>
+            <h2 className="font-bold text-pallasred md:my-4">FIND US</h2>
             <p className="text-xs md:text-sm text-center">
-              2810 N Church St PMB 203909 Wilmington, DE 19802-4447 US
+              Boston, Massachusetts
             </p>
           </div>
         </div>

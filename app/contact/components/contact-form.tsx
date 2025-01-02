@@ -66,8 +66,8 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2">
-      <div className="grid place-items-center">
+    <div className="grid grid-cols-1 w-full">
+      {/* <div className="grid place-items-center">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.4159934432423!2d-75.53139508726714!3d39.75276749566226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6fd32f02dfad1%3A0xe6f2b1c677ee067e!2s2810%20N%20Church%20St%2C%20Wilmington%2C%20DE%2019802%2C%20USA!5e0!3m2!1sen!2sph!4v1723793241820!5m2!1sen!2sph"
           width="600"
@@ -77,9 +77,12 @@ export default function ContactForm() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-      </div>
+      </div> */}
       <div className="p-8">
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col md:grid md:grid-cols-2 gap-4"
+        >
           <InputGroup
             name="name"
             value={formValues.name}
@@ -111,7 +114,7 @@ export default function ContactForm() {
             isTextArea
             onChange={(value) => updateFormValue("message", value)}
           />
-          <Button type="submit" className="bg-pallasred">
+          <Button type="submit" className="bg-pallasred md:col-span-2">
             Send
           </Button>
         </form>
@@ -135,7 +138,7 @@ const InputGroup = ({
   onChange?: (value: string) => void;
   isTextArea?: boolean;
 }) => (
-  <div className="flex flex-col gap-2">
+  <div className={`flex flex-col gap-2 ${isTextArea ? "col-span-2" : ""}`}>
     <Label htmlFor={name}>{label}</Label>
     {isTextArea ? (
       <Textarea
