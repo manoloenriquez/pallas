@@ -15,7 +15,7 @@ export async function generateStaticParams() {
     `${process.env.STRAPI_URL}/Pallas-catalogs`
   ).then((res) => res.json());
   const params: { collection: string; product: string }[] = [];
-
+  console.log(products);
   products.data.forEach((product) => {
     if (product.Category === "Transmission") {
       params.push({ collection: "transmission", product: product.slug });
@@ -23,7 +23,7 @@ export async function generateStaticParams() {
       params.push({ collection: "distribution", product: product.slug });
     }
   });
-
+  console.log(params);
   return params;
 }
 
@@ -36,7 +36,7 @@ export default async function Collection({
   const { data }: { data: ProductData[] } = await fetch(
     `${process.env.STRAPI_URL}/Pallas-catalogs?filters[slug][$eq]=${product}&populate=*`
   ).then((res) => res.json());
-  console.log("current product", data[0]);
+  console.log("current product", data);
 
   return <Content collection={collection} product={product} data={data[0]} />;
 }

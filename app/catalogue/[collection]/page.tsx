@@ -25,7 +25,6 @@ export default async function Collection({
   const products: { data: ProductData[] } = await fetch(
     `${process.env.STRAPI_URL}/Pallas-catalogs?filters[Category][$eq]=${collectionName}&populate=*`
   ).then((res) => res.json());
-  console.log(products);
 
   const columns = {
     transmission: "md:grid-cols-3",
