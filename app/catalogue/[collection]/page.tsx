@@ -3,35 +3,29 @@ import CatalogItem from "@/components/sections/catalog-item";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useParams } from "next/navigation";
-import productList from "@/assets/product-list.json";
 import Link from "next/link";
 import ProductItem from "@/components/sections/product-item";
 import FadeInView from "@/components/fadeinview";
+import { BlocksContent } from "@strapi/blocks-react-renderer";
+import { ProductData } from "../types";
 
-const catalogItems = [
-  {
-    src: "/catalog/transmission.jpg",
-    name: "Transmission",
-  },
-  {
-    src: "/catalog/distribution.png",
-    name: "Distribution",
-  },
-];
+export async function getStaticParams() {
+  return [{ collection: "distribution" }, { collection: "transmission" }];
+}
 
-export default function Collection({
+export default async function Collection({
   params,
 }: {
   params: { collection: string };
 }) {
   const { collection } = params;
-  const products = productList[collection as keyof typeof productList];
-  console.log(products);
+  const collectionName =
+    collection.at(0)?.toUpperCase() + collection.substring(1);
 
-  const gridSize = {
-    transmission: 3,
-    distribution: 8,
-  };
+  const products: { data: ProductData[] } = await fetch(
+    `${process.env.STRAPI_URL}/Pallas-catalogs?filters[Category][$eq]=${collectionName}&populate=*`
+  ).then((res) => res.json());
+  console.log(products);
 
   const columns = {
     transmission: "md:grid-cols-3",
@@ -46,22 +40,22 @@ export default function Collection({
             columns[collection as keyof typeof columns]
           } h-full w-full mx-auto`}
         >
-          {products.map((product, idx) => (
+          {products.data.map((product, idx) => (
             <Link
-              key={product.href}
-              href={`/catalogue/${collection}/${product.href}`}
+              key={product.id}
+              href={`/catalogue/${collection}/${product.slug}`}
               className="flex-1 overflow-hidden h-full min-h-[200px]"
             >
               <ProductItem
-                src={product.cover}
-                name={product.name}
+                src={product.CoverImage.url}
+                name={product.Name}
                 collection={collection}
               />
             </Link>
           ))}
           <div
             className={`border border-pallasred bg-pallasred grid place-items-center ${
-              products.length % 3 === 0 ? "md:col-span-3" : ""
+              products.data.length % 3 === 0 ? "md:col-span-3" : ""
             }`}
           >
             {/* <Link href="/contact">

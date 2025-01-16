@@ -16,8 +16,9 @@ import emailjs from "emailjs-com";
 
 import { FormEvent, useEffect, useState } from "react";
 import { sendEmail } from "../actions";
+// import { Skeleton } from "@/components/ui/skeleton";
 
-export default function ContactForm() {
+export default function ContactForm(props: { products: string[] }) {
   const [formValues, setFormValues] = useState({
     name: "",
     email: "",
@@ -65,19 +66,10 @@ export default function ContactForm() {
     }
   }
 
+  const [mapLoaded, setMapLoaded] = useState(false);
+
   return (
     <div className="grid grid-cols-1 w-full">
-      {/* <div className="grid place-items-center">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.4159934432423!2d-75.53139508726714!3d39.75276749566226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6fd32f02dfad1%3A0xe6f2b1c677ee067e!2s2810%20N%20Church%20St%2C%20Wilmington%2C%20DE%2019802%2C%20USA!5e0!3m2!1sen!2sph!4v1723793241820!5m2!1sen!2sph"
-          width="600"
-          height="450"
-          className="max-w-full"
-          style={{ border: 0 }}
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div> */}
       <div className="p-8">
         <form
           onSubmit={handleSubmit}
@@ -100,6 +92,7 @@ export default function ContactForm() {
             value={formValues.product}
             label="Product"
             onChange={(value) => updateFormValue("product", value)}
+            items={props.products}
           />
           <InputGroup
             name="contact"
@@ -138,7 +131,7 @@ const InputGroup = ({
   onChange?: (value: string) => void;
   isTextArea?: boolean;
 }) => (
-  <div className={`flex flex-col gap-2 ${isTextArea ? "col-span-2" : ""}`}>
+  <div className="flex flex-col gap-2">
     <Label htmlFor={name}>{label}</Label>
     {isTextArea ? (
       <Textarea
@@ -164,25 +157,16 @@ const ProductSelect = ({
   label,
   placeholder,
   onChange,
+  items,
 }: {
   name: string;
   value: string;
   label: string;
   placeholder?: string;
   onChange?: (value: string) => void;
+  items: string[];
 }) => {
-  const items = [
-    "Fuse Cutout",
-    "Lightning Arresters",
-    "Fuse Link",
-    "Meter Base",
-    "Disconnect Switch",
-    "Insulators",
-    "Fuse Tube",
-    "69KV Transmission Products",
-    "138KV Transmission Products",
-    "250KV Transmission Products",
-  ];
+  // const items = ["AWC Series Compression Connectors", "Meter Seal Series"];
 
   return (
     <div className="flex flex-col gap-2">
