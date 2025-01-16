@@ -9,7 +9,7 @@ import FadeInView from "@/components/fadeinview";
 import { BlocksContent } from "@strapi/blocks-react-renderer";
 import { ProductData } from "../types";
 
-export async function getStaticParams() {
+export async function generateStaticParams() {
   return [{ collection: "distribution" }, { collection: "transmission" }];
 }
 
